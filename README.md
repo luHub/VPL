@@ -34,11 +34,9 @@ The end goals:
 
 - Ion-Trapped-conisphierium (TBD)
 - Vectorian Phasor language VPL (Under Work)
--Fabrications (TBD) We are not sure why we need this, something with a machine setup
-
--Oraculization (TBD) Not sure what it will do, something with an Oracle because that sounds important lately.
-
--Coinshufering (TBD) Something with probability, idk, toss coins...
+- Fabrications (TBD) We are not sure why we need this, something with a machine setup
+- Oraculization (TBD) Not sure what it will do, something with an Oracle because that sounds important lately.
+- Coinshufering (TBD) Something with probability, idk, toss coins...
  
 VPL:
 
