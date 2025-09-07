@@ -44,11 +44,11 @@ A vector is defined by a direction and magnitude, and if starts spinning is a ph
 
 Rules:
 
--All assignments are vectors 
--All operators do vector operations
--All math operations results are vectors 
+- All assignments are vectors 
+- All operators do vector operations
+- All math operations results are vectors 
 
--Data types are vectors too but in different spaces, as the vector space will be divided by types. Type casting is defined by a travel to a different Vectorial space.
+- Data types are vectors too but in different spaces, as the vector space will be divided by types. Type casting is defined by a travel to a different Vectorial space.
 
 - All loops are phasors because both go in circles 
 
