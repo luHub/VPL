@@ -1,7 +1,7 @@
 # VPL
 Vector Phasor Language
 
-See the PDF
+See the paper evolution. 
 
 This language works in the novel principles concepts of Quantum Computing. 
 
@@ -47,11 +47,9 @@ Rules:
 - All assignments are vectors 
 - All operators do vector operations
 - All math operations results are vectors 
-
 - Data types are vectors too but in different spaces, as the vector space will be divided by types. Type casting is defined by a travel to a different Vectorial space.
-
 - All loops are phasors because both go in circles 
-
 - All decision statements are phasors too because everything could be done with a "While" (Where is my programming analysis book). 90 degrees means true and -90 means false, like when looking into the sky or into the ground. 
-
 - All numbers are vectors
+
+  I will be using chat GTP to help me with my wild ideas... shame on me. 
