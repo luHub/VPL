@@ -54,4 +54,4 @@ Rules:
 
 - All decision statements are phasors too because everything could be done with a "While" (Where is my programming analysis book). 90 degrees means true and -90 means false, like when looking into the sky or into the ground. 
 
-- All numbers are the magnitudes of the vector
+- All numbers are vectors
