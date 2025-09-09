@@ -52,4 +52,11 @@ Rules:
 - All decision statements are phasors too because everything could be done with a "While" (Where is my programming analysis book). 90 degrees means true and -90 means false, like when looking into the sky or into the ground. 
 - All numbers are vectors
 
+
+Help wanted! If you think you can help to make new tech go for one of the objective start prototyping, and create a MR,  with your name and reference to your original sources if there is any. All will be shared with a GPL License and be free for the world to copy/paste. The end goal is to have less power consumption so we can advance civilization to the next level! If you think you can't help study physics, math, engineering and computer science and after 10 years come back. 
+
+Collaborators:
+
+
+
   I will be using chat GTP to help me with my wild ideas... shame on me. 
