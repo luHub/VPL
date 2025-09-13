@@ -1,17 +1,14 @@
-# VPL
-Vector Phasor Language
+# VPL (Vector Phasor Language)
 
-VPL is a mathematical framework to see programs as geometric motion. The idea comes from a combination of Electrical Engineering + Computer Science + and same Math. The inspiration comes from books on Quantum Computation and also to start doing electroni circuits again after +10 years writting code. For some years, I had this ideas, why not vectors because we use vectors a lot for engineering... Later, when I studied compiler construction everything was different it was like looking other movie but was a good catch with semantics. Still the idea was there in motion. So, how to connect this all togheter. So well, you need to translate semantics into something else, with some rules, so I start pairing stuff, so if with a "While" you can do almost anything... so let a while map to a phasor because both goes in circles. Typing well lets have a Vector space for types, and so on. 
+VPL is a mathematical framework for seeing programs as geometric motion. The idea comes from a combination of electrical engineering, computer science, and mathematics. For years, I kept coming back to a simple thought: why not vectors? After all, we use them to describe almost everything. Later, when I studied compiler construction, everything was different; it was like watching another movie, but it was a good catch on semantics. Still, the idea was in motion. So, how to connect this together? Translating semantics into something else, with some rules, so I start pairing stuff, so if with a "While" you can do almost anything... so let a while map to a phasor because both go in circles. Typing well, let's have a Vector space for types, and so on.
 
-With the advent of LLMs well I use chat GPT, I prototyped something, one advante to know about electrical engineering, computer science and math (this needs to improve) is that I know exactly what I want, thing is the speed to deliver is quite low, but hey chat GPT to the rescue, I know how to "prompt", so VPL is here.
+With the advent of LLMs well I use chat GPT, I prototyped something, one advantage to know about electrical engineering, computer science and math (this needs to improve) is that I know exactly what I want, thing is the speed to deliver is quite low, but hey chat GPT to the rescue, I know how to "prompt", so VPL is here.
 
-There still a lot of work do to. Like do intense math proofing preferable by humans, and evolve the model a bit more. But, I think it has some nice way to shift from "code" to "hardware". Why to do that? because we need simpler machines once we know what we want therefore converting software to hardware migh be promising specially if we could have the same performance and less energy consumption. The other reason is that we need to start working at
-atomic level, with elecrons, really small, and Quantum mechanics is definded by vectors so would be tempting to map as much possible to quantum circuits too. 
+There is work to do. For example, math proofing by humans, covering more cases in the model, and testing. I think it has a nice way to shift from "code" to "hardware". We need simpler machines once we know what we want; therefore, converting software to hardware sounds promising, especially for performance and less energy consumption. The other reason is that we need to start working at an atomic level, and Quantum mechanics is defined by vectors, so it would be tempting to map as much as possible to quantum circuits.
 
-One additional curiosity I have is to seek the limits of noise and here comes information theory to the play ground why not...
+One additional curiosity I have is to analyze noise, and here comes information theory to the playground, why not...
 
-
-I will evolve this mathematical framework as much as possile and it is open for Peer review. 
+I will evolve this mathematical framework as much as possible, and it is open for peer review.
 
 # Peer Reviews
 
