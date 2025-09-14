@@ -1,21 +1,39 @@
 # VPL (Vector Phasor Language)
 
-VPL is a mathematical framework for seeing programs as geometric motion. The idea comes from a combination of electrical engineering, computer science, and mathematics. For years, I kept coming back to a simple thought: why not vectors? After all, we use them to describe almost everything. Later, when I studied compiler construction, everything was different; it was like watching another movie, but it was a good catch on semantics. Still, the idea was in motion. So, how to connect this together? Translating semantics into something else, with some rules, so I start pairing stuff, so if with a "While" you can do almost anything... so let a while map to a phasor because both go in circles. Typing well, let's have a Vector space for types, and so on.
+VPL is a mathematical framework for seeing programs as geometric motion. The idea comes from a combination of electrical engineering, computer science, and mathematics. For years, I kept coming back to a simple thought: why not vectors? After all, we use them to describe almost everything. Later, when I studied compiler construction, everything was different; it was like watching another movie, but it was a good catch on semantics and linguistics. Still, the idea was in motion. So, how to connect this together? Translating semantics into something else, with some rules, so I start pairing stuff, so if with a "While" you can do almost anything... so let a while map to a phasor because both go in circles. Typing well, let's have a Vector space for types, and so on.
 
-With the advent of LLMs well I use chat GPT, I prototyped something, one advantage to know about electrical engineering, computer science and math (this needs to improve) is that I know exactly what I want, thing is the speed to deliver is quite low, but hey chat GPT to the rescue, I know how to "prompt", so VPL is here.
+With the advent of LLMs well I use chat GPT, I prototyped something, one advantage to know about electrical engineering, computer science and math (this needs to improve) is that I know exactly what I want or at least know when something is off or does not make 100% sense. Thing is the speed to deliver is quite low without LLMs, they are here to stay so we must use them. 
 
-There is work to do. For example, math proofing by humans, covering more cases in the model, and testing. I think it has a nice way to shift from "code" to "hardware". We need simpler machines once we know what we want; therefore, converting software to hardware sounds promising, especially for performance and less energy consumption. The other reason is that we need to start working at an atomic level, and Quantum mechanics is defined by vectors, so it would be tempting to map as much as possible to quantum circuits.
+There is work to do. For example, math proofing by humans, covering more cases in the model, and testing. I think it has a nice way to shift from "code" to "hardware". We need simpler machines once we know what we want; therefore, converting software to hardware sounds promising, especially for performance reasons and less energy consumption. Finally another reasons is that we need to start working or thingkins in terms of quantum mechanics, which is already defined by vectors, so it would be tempting to map as much as possible to quantum circuits too. 
 
-One additional curiosity I have is to analyze noise, and here comes information theory to the playground, why not...
+One additional curiosity I have is to analyze mathematical models for noise calculations, and here comes information theory to the playground, why not...
 
 I will evolve this mathematical framework as much as possible, and it is open for peer review.
+
+# VPL as IR
+
+VPL also is an intermediate represenation language (IR) between software semantics and physical implementations, you can picture it as a translation tool. In a broad picture, once you cross to another domain you adjust and optimize in that domain as the inputs and outputs remain valid. The final test of this is a physical implementation of a complex software library. 
+
+# Demo list 
+
+
+# VPL Semantics
+
 
 # Peer Reviews
 
 Create a MR with your comments and after review I create a new version of it
 
-
 # Contributors
+
+
+
+
+
+
+
+
+
 
 
 
@@ -75,11 +93,10 @@ Rules:
 - All decision statements are phasors too because everything could be done with a "While" (Where is my programming analysis book). 90 degrees means true and -90 means false, like when looking into the sky or into the ground while going to an urinary. 
 - All numbers are vectors
 
-
-Help wanted! If you think you can help to make new tech go for one of the objective start prototyping, and create a MR,  with your name and reference to your original sources if there is any. All will be shared with a GPL License and be free for the world to copy/paste. The end goal is to have less power consumption so we can advance civilization to the next level! If you think you can't help study physics, math, engineering and computer science and after 10 years come back. 
+Help wanted! If you think you can help to make new tech go for one of the objective start prototyping, and create a MR,  with your name and reference to your original sources if there is any. All will be shared with a GPL License and be free for the world to copy/paste. The end goal is to have less power consumption so we can advance civilization to the next level before we consume all our resources! If you think you can't help study physics, math, engineering and computer science and after 10 years come back..  
 
 Collaborators:
-
+For the real authors, real teachers and real people of science. Not the fakers, not the posers.  
 
 
   I will be using chat GTP to help me with my wild ideas... shame on me. 
