@@ -4,7 +4,7 @@ VPL is a mathematical framework for seeing programs as geometric motion. The ide
 
 With the advent of LLMs well I use chat GPT, I prototyped something, one advantage to know about electrical engineering, computer science and math (this needs to improve) is that I know exactly what I want or at least know when something is off or does not make any logic. Thing is the speed to deliver is quite low without or imposible without LLMs; they are here to stay so we must use them. 
 
-There is work to do. For example, math proofing by humans, covering more cases in the model, and testing. I think it has a nice way to shift from "code" to "hardware". We need simpler machines once we know what we want; therefore, converting software to hardware sounds promising, especially for performance reasons and less energy consumption. Finally another reasons is that we need to start working or thingkins in terms of quantum mechanics, which is already defined by vectors, so it would be tempting to map as much as possible to quantum circuits too. 
+There is work to do. For example, math proving by humans, covering more cases in the model, and testing. I think it has a nice way to shift from "code" to "hardware". We need simpler machines once we know what we want; therefore, converting software to hardware sounds promising, especially for performance reasons and less energy consumption. Finally another reasons is that we need to start working or thingkins in terms of quantum mechanics, which is already defined by vectors, so it would be tempting to map as much as possible to quantum circuits too. 
 
 One additional curiosity I have is to analyze mathematical models for noise calculations, and here comes information theory to the playground, why not...
 
