@@ -6,7 +6,7 @@ Small demo to evaluate VPL output depending on github public FFT implementations
 
 ## Inputs Sources
 
-Small demo using as input https://github.com/jtfell/c-fft Cooley-Tukey FFT algorithm
+Small demo using as input Cooley-Tukey FFT algorithm from https://github.com/jtfell/c-fft 
 
 ## Compiler
 
