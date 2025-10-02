@@ -7,6 +7,7 @@ Small demo to evaluate VPL output depending on github public FFT implementations
 ## Inputs Sources
 
 Small demo using as input Cooley-Tukey FFT algorithm from chatGTP 
+Nice small FFT from here https://github.com/lloydroc/arduino_fft/blob/master/fft.c
 
 ## Compiler
 
@@ -32,3 +33,4 @@ C/C++ code
 ## Contributions
 
 Input from chatGTP
+Input from https://github.com/lloydroc/arduino_fft/blob/master/fft.c
