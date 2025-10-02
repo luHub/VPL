@@ -1,0 +1,566 @@
+{
+  "blocks": [
+    {
+      "id": "b0",
+      "type": "var_decl",
+      "params": {
+        "name": "r"
+      }
+    },
+    {
+      "id": "b1",
+      "type": "raw_stmt",
+      "params": {
+        "stmt": "Return"
+      }
+    },
+    {
+      "id": "b2",
+      "type": "var_decl",
+      "params": {
+        "name": "r"
+      }
+    },
+    {
+      "id": "b3",
+      "type": "raw_stmt",
+      "params": {
+        "stmt": "Return"
+      }
+    },
+    {
+      "id": "b4",
+      "type": "var_decl",
+      "params": {
+        "name": "r"
+      }
+    },
+    {
+      "id": "b5",
+      "type": "raw_stmt",
+      "params": {
+        "stmt": "Return"
+      }
+    },
+    {
+      "id": "b6",
+      "type": "var_decl",
+      "params": {
+        "name": "angle"
+      }
+    },
+    {
+      "id": "b7",
+      "type": "var_decl",
+      "params": {
+        "name": "w"
+      }
+    },
+    {
+      "id": "b8",
+      "type": "raw_stmt",
+      "params": {
+        "stmt": "Return"
+      }
+    },
+    {
+      "id": "b9",
+      "type": "raw_stmt",
+      "params": {
+        "stmt": "If"
+      }
+    },
+    {
+      "id": "b10",
+      "type": "var_decl",
+      "params": {
+        "name": "half"
+      }
+    },
+    {
+      "id": "b11",
+      "type": "var_decl",
+      "params": {
+        "name": "even"
+      }
+    },
+    {
+      "id": "b12",
+      "type": "var_decl",
+      "params": {
+        "name": "odd"
+      }
+    },
+    {
+      "id": "b13",
+      "type": "raw_stmt",
+      "params": {
+        "for": {
+          "init": {
+            "expr": "DeclList"
+          },
+          "cond": {
+            "binop": {
+              "op": "<",
+              "left": {
+                "id": "i"
+              },
+              "right": {
+                "id": "half"
+              }
+            }
+          },
+          "next": {
+            "unop": {
+              "op": "p++",
+              "expr": {
+                "id": "i"
+              }
+            }
+          },
+          "body": [
+            {
+              "assign": {
+                "lvalue": {
+                  "expr": "ArrayRef"
+                },
+                "rvalue": {
+                  "expr": "ArrayRef"
+                }
+              }
+            },
+            {
+              "assign": {
+                "lvalue": {
+                  "expr": "ArrayRef"
+                },
+                "rvalue": {
+                  "expr": "ArrayRef"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b14",
+      "type": "raw_stmt",
+      "params": {
+        "call": {
+          "func": {
+            "id": "FFT_CooleyTukey"
+          },
+          "args": [
+            {
+              "id": "even"
+            },
+            {
+              "id": "half"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b15",
+      "type": "raw_stmt",
+      "params": {
+        "call": {
+          "func": {
+            "id": "FFT_CooleyTukey"
+          },
+          "args": [
+            {
+              "id": "odd"
+            },
+            {
+              "id": "half"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b16",
+      "type": "raw_stmt",
+      "params": {
+        "for": {
+          "init": {
+            "expr": "DeclList"
+          },
+          "cond": {
+            "binop": {
+              "op": "<",
+              "left": {
+                "id": "k"
+              },
+              "right": {
+                "id": "half"
+              }
+            }
+          },
+          "next": {
+            "unop": {
+              "op": "p++",
+              "expr": {
+                "id": "k"
+              }
+            }
+          },
+          "body": [
+            {
+              "decl": "t"
+            },
+            {
+              "assign": {
+                "lvalue": {
+                  "expr": "ArrayRef"
+                },
+                "rvalue": {
+                  "call": {
+                    "func": {
+                      "id": "c_add"
+                    },
+                    "args": [
+                      {
+                        "expr": "ArrayRef"
+                      },
+                      {
+                        "id": "t"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "assign": {
+                "lvalue": {
+                  "expr": "ArrayRef"
+                },
+                "rvalue": {
+                  "call": {
+                    "func": {
+                      "id": "c_sub"
+                    },
+                    "args": [
+                      {
+                        "expr": "ArrayRef"
+                      },
+                      {
+                        "id": "t"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b17",
+      "type": "raw_stmt",
+      "params": {
+        "call": {
+          "func": {
+            "id": "free"
+          },
+          "args": [
+            {
+              "id": "even"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b18",
+      "type": "raw_stmt",
+      "params": {
+        "call": {
+          "func": {
+            "id": "free"
+          },
+          "args": [
+            {
+              "id": "odd"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b19",
+      "type": "raw_stmt",
+      "params": {
+        "for": {
+          "init": {
+            "expr": "DeclList"
+          },
+          "cond": {
+            "binop": {
+              "op": "<",
+              "left": {
+                "id": "i"
+              },
+              "right": {
+                "id": "N"
+              }
+            }
+          },
+          "next": {
+            "unop": {
+              "op": "p++",
+              "expr": {
+                "id": "i"
+              }
+            }
+          },
+          "body": [
+            {
+              "call": {
+                "func": {
+                  "id": "printf"
+                },
+                "args": [
+                  {
+                    "const": "\"%d: %.4f + %.4fi\\n\""
+                  },
+                  {
+                    "id": "i"
+                  },
+                  {
+                    "structref": {
+                      "name": {
+                        "expr": "ArrayRef"
+                      },
+                      "field": "re"
+                    }
+                  },
+                  {
+                    "structref": {
+                      "name": {
+                        "expr": "ArrayRef"
+                      },
+                      "field": "im"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b20",
+      "type": "var_decl",
+      "params": {
+        "name": "N"
+      }
+    },
+    {
+      "id": "b21",
+      "type": "var_decl",
+      "params": {
+        "name": "x"
+      }
+    },
+    {
+      "id": "b22",
+      "type": "raw_stmt",
+      "params": {
+        "for": {
+          "init": {
+            "expr": "DeclList"
+          },
+          "cond": {
+            "binop": {
+              "op": "<",
+              "left": {
+                "id": "i"
+              },
+              "right": {
+                "id": "N"
+              }
+            }
+          },
+          "next": {
+            "unop": {
+              "op": "p++",
+              "expr": {
+                "id": "i"
+              }
+            }
+          },
+          "body": [
+            {
+              "assign": {
+                "lvalue": {
+                  "structref": {
+                    "name": {
+                      "expr": "ArrayRef"
+                    },
+                    "field": "re"
+                  }
+                },
+                "rvalue": {
+                  "call": {
+                    "func": {
+                      "id": "sin"
+                    },
+                    "args": [
+                      {
+                        "binop": {
+                          "op": "/",
+                          "left": {
+                            "binop": {
+                              "op": "*",
+                              "left": {
+                                "binop": {
+                                  "op": "*",
+                                  "left": {
+                                    "const": "2"
+                                  },
+                                  "right": {
+                                    "id": "M_PI"
+                                  }
+                                }
+                              },
+                              "right": {
+                                "id": "i"
+                              }
+                            }
+                          },
+                          "right": {
+                            "id": "N"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "assign": {
+                "lvalue": {
+                  "structref": {
+                    "name": {
+                      "expr": "ArrayRef"
+                    },
+                    "field": "im"
+                  }
+                },
+                "rvalue": {
+                  "const": "0.0"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b23",
+      "type": "raw_stmt",
+      "params": {
+        "call": {
+          "func": {
+            "id": "printf"
+          },
+          "args": [
+            {
+              "const": "\"Input:\\n\""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b24",
+      "type": "raw_stmt",
+      "params": {
+        "call": {
+          "func": {
+            "id": "print_fft"
+          },
+          "args": [
+            {
+              "id": "x"
+            },
+            {
+              "id": "N"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b25",
+      "type": "raw_stmt",
+      "params": {
+        "call": {
+          "func": {
+            "id": "FFT_CooleyTukey"
+          },
+          "args": [
+            {
+              "id": "x"
+            },
+            {
+              "id": "N"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b26",
+      "type": "raw_stmt",
+      "params": {
+        "call": {
+          "func": {
+            "id": "printf"
+          },
+          "args": [
+            {
+              "const": "\"\\nFFT Output:\\n\""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b27",
+      "type": "raw_stmt",
+      "params": {
+        "call": {
+          "func": {
+            "id": "print_fft"
+          },
+          "args": [
+            {
+              "id": "x"
+            },
+            {
+              "id": "N"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "b28",
+      "type": "raw_stmt",
+      "params": {
+        "stmt": "Return"
+      }
+    }
+  ],
+  "connections": []
+}
+
