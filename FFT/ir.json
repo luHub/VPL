@@ -1,0 +1,491 @@
+{
+  "functions": [
+    {
+      "name": "c_add",
+      "params": [],
+      "body": [
+        {
+          "decl": "r"
+        },
+        {
+          "stmt": "Return"
+        }
+      ]
+    },
+    {
+      "name": "c_sub",
+      "params": [],
+      "body": [
+        {
+          "decl": "r"
+        },
+        {
+          "stmt": "Return"
+        }
+      ]
+    },
+    {
+      "name": "c_mul",
+      "params": [],
+      "body": [
+        {
+          "decl": "r"
+        },
+        {
+          "stmt": "Return"
+        }
+      ]
+    },
+    {
+      "name": "twiddle",
+      "params": [],
+      "body": [
+        {
+          "decl": "angle"
+        },
+        {
+          "decl": "w"
+        },
+        {
+          "stmt": "Return"
+        }
+      ]
+    },
+    {
+      "name": "FFT_CooleyTukey",
+      "params": [],
+      "body": [
+        {
+          "stmt": "If"
+        },
+        {
+          "decl": "half"
+        },
+        {
+          "decl": "even"
+        },
+        {
+          "decl": "odd"
+        },
+        {
+          "for": {
+            "init": {
+              "expr": "DeclList"
+            },
+            "cond": {
+              "binop": {
+                "op": "<",
+                "left": {
+                  "id": "i"
+                },
+                "right": {
+                  "id": "half"
+                }
+              }
+            },
+            "next": {
+              "unop": {
+                "op": "p++",
+                "expr": {
+                  "id": "i"
+                }
+              }
+            },
+            "body": [
+              {
+                "assign": {
+                  "lvalue": {
+                    "expr": "ArrayRef"
+                  },
+                  "rvalue": {
+                    "expr": "ArrayRef"
+                  }
+                }
+              },
+              {
+                "assign": {
+                  "lvalue": {
+                    "expr": "ArrayRef"
+                  },
+                  "rvalue": {
+                    "expr": "ArrayRef"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "call": {
+            "func": {
+              "id": "FFT_CooleyTukey"
+            },
+            "args": [
+              {
+                "id": "even"
+              },
+              {
+                "id": "half"
+              }
+            ]
+          }
+        },
+        {
+          "call": {
+            "func": {
+              "id": "FFT_CooleyTukey"
+            },
+            "args": [
+              {
+                "id": "odd"
+              },
+              {
+                "id": "half"
+              }
+            ]
+          }
+        },
+        {
+          "for": {
+            "init": {
+              "expr": "DeclList"
+            },
+            "cond": {
+              "binop": {
+                "op": "<",
+                "left": {
+                  "id": "k"
+                },
+                "right": {
+                  "id": "half"
+                }
+              }
+            },
+            "next": {
+              "unop": {
+                "op": "p++",
+                "expr": {
+                  "id": "k"
+                }
+              }
+            },
+            "body": [
+              {
+                "decl": "t"
+              },
+              {
+                "assign": {
+                  "lvalue": {
+                    "expr": "ArrayRef"
+                  },
+                  "rvalue": {
+                    "call": {
+                      "func": {
+                        "id": "c_add"
+                      },
+                      "args": [
+                        {
+                          "expr": "ArrayRef"
+                        },
+                        {
+                          "id": "t"
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "assign": {
+                  "lvalue": {
+                    "expr": "ArrayRef"
+                  },
+                  "rvalue": {
+                    "call": {
+                      "func": {
+                        "id": "c_sub"
+                      },
+                      "args": [
+                        {
+                          "expr": "ArrayRef"
+                        },
+                        {
+                          "id": "t"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "call": {
+            "func": {
+              "id": "free"
+            },
+            "args": [
+              {
+                "id": "even"
+              }
+            ]
+          }
+        },
+        {
+          "call": {
+            "func": {
+              "id": "free"
+            },
+            "args": [
+              {
+                "id": "odd"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "print_fft",
+      "params": [],
+      "body": [
+        {
+          "for": {
+            "init": {
+              "expr": "DeclList"
+            },
+            "cond": {
+              "binop": {
+                "op": "<",
+                "left": {
+                  "id": "i"
+                },
+                "right": {
+                  "id": "N"
+                }
+              }
+            },
+            "next": {
+              "unop": {
+                "op": "p++",
+                "expr": {
+                  "id": "i"
+                }
+              }
+            },
+            "body": [
+              {
+                "call": {
+                  "func": {
+                    "id": "printf"
+                  },
+                  "args": [
+                    {
+                      "const": "\"%d: %.4f + %.4fi\\n\""
+                    },
+                    {
+                      "id": "i"
+                    },
+                    {
+                      "structref": {
+                        "name": {
+                          "expr": "ArrayRef"
+                        },
+                        "field": "re"
+                      }
+                    },
+                    {
+                      "structref": {
+                        "name": {
+                          "expr": "ArrayRef"
+                        },
+                        "field": "im"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "main",
+      "params": [],
+      "body": [
+        {
+          "decl": "N"
+        },
+        {
+          "decl": "x"
+        },
+        {
+          "for": {
+            "init": {
+              "expr": "DeclList"
+            },
+            "cond": {
+              "binop": {
+                "op": "<",
+                "left": {
+                  "id": "i"
+                },
+                "right": {
+                  "id": "N"
+                }
+              }
+            },
+            "next": {
+              "unop": {
+                "op": "p++",
+                "expr": {
+                  "id": "i"
+                }
+              }
+            },
+            "body": [
+              {
+                "assign": {
+                  "lvalue": {
+                    "structref": {
+                      "name": {
+                        "expr": "ArrayRef"
+                      },
+                      "field": "re"
+                    }
+                  },
+                  "rvalue": {
+                    "call": {
+                      "func": {
+                        "id": "sin"
+                      },
+                      "args": [
+                        {
+                          "binop": {
+                            "op": "/",
+                            "left": {
+                              "binop": {
+                                "op": "*",
+                                "left": {
+                                  "binop": {
+                                    "op": "*",
+                                    "left": {
+                                      "const": "2"
+                                    },
+                                    "right": {
+                                      "id": "M_PI"
+                                    }
+                                  }
+                                },
+                                "right": {
+                                  "id": "i"
+                                }
+                              }
+                            },
+                            "right": {
+                              "id": "N"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "assign": {
+                  "lvalue": {
+                    "structref": {
+                      "name": {
+                        "expr": "ArrayRef"
+                      },
+                      "field": "im"
+                    }
+                  },
+                  "rvalue": {
+                    "const": "0.0"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "call": {
+            "func": {
+              "id": "printf"
+            },
+            "args": [
+              {
+                "const": "\"Input:\\n\""
+              }
+            ]
+          }
+        },
+        {
+          "call": {
+            "func": {
+              "id": "print_fft"
+            },
+            "args": [
+              {
+                "id": "x"
+              },
+              {
+                "id": "N"
+              }
+            ]
+          }
+        },
+        {
+          "call": {
+            "func": {
+              "id": "FFT_CooleyTukey"
+            },
+            "args": [
+              {
+                "id": "x"
+              },
+              {
+                "id": "N"
+              }
+            ]
+          }
+        },
+        {
+          "call": {
+            "func": {
+              "id": "printf"
+            },
+            "args": [
+              {
+                "const": "\"\\nFFT Output:\\n\""
+              }
+            ]
+          }
+        },
+        {
+          "call": {
+            "func": {
+              "id": "print_fft"
+            },
+            "args": [
+              {
+                "id": "x"
+              },
+              {
+                "id": "N"
+              }
+            ]
+          }
+        },
+        {
+          "stmt": "Return"
+        }
+      ]
+    }
+  ]
+}
+
