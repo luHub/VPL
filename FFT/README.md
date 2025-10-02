@@ -28,3 +28,7 @@ C/C++ code
    +-- Option A: symbolic operators (Reshape, DFT, Twiddle)
    +-- Option B: expanded matrices for simulation
 ```
+
+## Contributions
+
+Input from https://github.com/jtfell/c-fft 
