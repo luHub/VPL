@@ -4,6 +4,7 @@
 
 ## Compiler
 
+```
 C/C++ code
    |
    v
@@ -20,4 +21,4 @@ C/C++ code
    |
    +-- Option A: symbolic operators (Reshape, DFT, Twiddle)
    +-- Option B: expanded matrices for simulation
-
+```
