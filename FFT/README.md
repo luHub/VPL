@@ -6,7 +6,7 @@ Small demo to evaluate VPL output depending on github public FFT implementations
 
 ## Inputs Sources
 
-Small demo using as input Cooley-Tukey FFT algorithm from https://github.com/jtfell/c-fft 
+Small demo using as input Cooley-Tukey FFT algorithm from chatGTP 
 
 ## Compiler
 
@@ -31,4 +31,4 @@ C/C++ code
 
 ## Contributions
 
-Input from https://github.com/jtfell/c-fft 
+Input from chatGTP
