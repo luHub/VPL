@@ -1,9 +1,7 @@
 *.tex      # all .tex 
 *.out      # all .out
 *.log      # all .log 
+*.aux      # all .aux 
 
-./**/*.tex      # all .tex 
-./**/*.out      # all .out
-./**/*.log      # all .log 	 
 
 
