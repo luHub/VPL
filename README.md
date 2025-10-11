@@ -14,7 +14,7 @@ VPL also is an intermediate representation language (IR) between software semant
 
 # VPL Toolchain
 
-From the master paper, there are 2 possible inputs one from mathematics formulations to VPL, mathematical translation to VPL or the other one is to 
+From the "master paper", there are 2 possible inputs one from mathematics formulations to VPL, mathematical translation to VPL or the other one is to 
 bridge from highlevel programming to VPL.
 
 Once in VPL, abstract semantics or mathematical formulations become part of the hardware domain. Here is possible to optimize in terms of engineering depending, that could be
@@ -24,7 +24,7 @@ electrical, quantic, any other physical representation.
 
 - The tool chain will focus on Electrical Digital and Analog implementations since I need to finish studying Quantum Computing to have a basic understanding what I am doing. 
 - Tool chain PoC will focus on small algorithms written in Python, C++, and C. As input.
-- According to the master paper general purpose systems are out of scope.    
+- According to the master paper general purpose systems are out of scope.
 
 ## The Abstract toolchain
 
@@ -34,9 +34,14 @@ This one is for mathematics and developed as papers with mathematical formulatio
 
 This one is actual code to produce an intermediate representation and from there create hardware.
 
+### The Full toolchain
+
+Has everything and we will evolve it from the simplest but not so simple programming language semantics. 
+
 # Demo list 
 
-- Fast Fourier Transform: From code to Hardware Implementation
+- While loop
+- Fast Fourier Transform: From code to Hardware Implementation 
 
 # Peer Reviews
 
