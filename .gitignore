@@ -1,0 +1,3 @@
+**/*.tmp      # all .tex 
+**/*.out      # all .out
+**/*.log	   # all .log 	 
