@@ -1,3 +1,7 @@
-**/*.tmp      # all .tex 
+*.tex      # all .tex 
+*.out      # all .out
+*.log      # all .log 
+
+**/*.tex      # all .tex 
 **/*.out      # all .out
-**/*.log	   # all .log 	 
+**/*.log      # all .log 	 
