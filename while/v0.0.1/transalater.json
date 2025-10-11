@@ -1,0 +1,64 @@
+{
+  "blocks": [
+    {
+      "id": "init_x",
+      "type": "init_var",
+      "params": {
+        "name": "x",
+        "type": "int",
+        "init": "0"
+      }
+    },
+    {
+      "id": "b_s1",
+      "type": "while_loop",
+      "params": {
+        "cond": "x < 5"
+      }
+    },
+    {
+      "id": "b_s0",
+      "type": "assign",
+      "params": {
+        "target": "x",
+        "expr": "x + 2"
+      }
+    },
+    {
+      "id": "b_s2",
+      "type": "print",
+      "params": {
+        "var": "x"
+      }
+    },
+    {
+      "id": "b_s3",
+      "type": "raw",
+      "params": {
+        "stmt": "return 0"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from": "init_x",
+      "to": "b_s1"
+    },
+    {
+      "from": "b_s1",
+      "to": "b_s0"
+    },
+    {
+      "from": "b_s0",
+      "to": "b_s1"
+    },
+    {
+      "from": "b_s1",
+      "to": "b_s2"
+    },
+    {
+      "from": "b_s2",
+      "to": "b_s3"
+    }
+  ]
+}
