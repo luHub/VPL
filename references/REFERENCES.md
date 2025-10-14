@@ -32,7 +32,7 @@ Here are the references to start getting solid fundations.
 
 - Continuous-time computation with analog neural networks — Hava Siegelmann, Eduardo Sontag (1991).
 
-- Analog computation and Church’s Thesis — Hava Siegelmann (1995).
+- Analog computation and Church’s Thesis — Hava Siegelmann (1995). [https://www.sciencedirect.com/science/article/pii/0304397594901783?via%3Dihub](https://www.sciencedirect.com/science/article/pii/0304397594901783?via%3Dihub)
 
 - Analog and Hybrid Computing — Bertrand Russell (classic references to early hybrid systems).
 
