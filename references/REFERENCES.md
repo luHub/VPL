@@ -38,7 +38,7 @@ Here are the references to start getting solid fundations.
 
 - Computation Beyond Turing Limit [https://binds.cs.umass.edu/papers/1995_Siegelmann_Science.pdf](https://binds.cs.umass.edu/papers/1995_Siegelmann_Science.pdf) Hava Siegelmann.
 
-
+- Computation Beyond Turing Machines — Peter Wegner, Dina Goldin
 
 ## Quantum Computation
 
