@@ -36,7 +36,9 @@ Here are the references to start getting solid fundations.
 
 - Analog and Hybrid Computing — Bertrand Russell (classic references to early hybrid systems).
 
-- Computation Beyond Turing — Mark Burgin.
+- Computation Beyond Turing Limit (https://binds.cs.umass.edu/papers/1995_Siegelmann_Science.pdf)[https://binds.cs.umass.edu/papers/1995_Siegelmann_Science.pdf] — Hava Siegelmann.
+
+
 
 ## Quantum Computation
 
