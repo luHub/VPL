@@ -5,5 +5,5 @@ Here are the references to start getting solid fundations
 
 ## Items
 
-- church-turing Thesis (https://plato.stanford.edu/entries/church-turing/)[https://plato.stanford.edu/entries/church-turing/]
+- church-turing Thesis [https://plato.stanford.edu/entries/church-turing/](https://plato.stanford.edu/entries/church-turing/)
 -
