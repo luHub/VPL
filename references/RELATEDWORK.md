@@ -8,7 +8,7 @@ arXiv
 - Enhancing Linear Algebraic Computation of Logic Programs Using Sparse Representation — (2022) 
 SpringerLink
 
--Semantic Source Code Models Using Identifier Embeddings — Efstathiou & Spinellis (2019) 
+- Semantic Source Code Models Using Identifier Embeddings — Efstathiou & Spinellis (2019) 
 arXiv
 
 - Hidden-Markov Program Algebra with Iteration — McIver, Meinicke & Morgan (2014) 
