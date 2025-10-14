@@ -1,6 +1,6 @@
-#RELATED WORK
+# RELATED WORK
 
-This should expand but is as much as related work could be extracted and we should reading it:
+This should expand  as much as possible:
 
 - A Linear Algebraic Approach to Datalog Evaluation — Taisuke Sato (2016) 
 arXiv
