@@ -1,5 +1,11 @@
 # NOTES
 
+## Thoughts 
+
+The amount of bullshit generated for V0.0.2 is astonishing but enterteining. Now the fun part will be to produce some usefull result
+and start all over again for V0.0.3. So we will expand the compiler, now, here are my actual 2 cents on this... see, we start
+from the compiler with a sensitive grammar "C language" and we go from there.
+
 ## More next next steps 2025_10_X
 
 As the master paper growths, it revealed a structure, that it is, the information needs a word by word examination.
