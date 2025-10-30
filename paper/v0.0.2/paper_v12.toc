@@ -1,0 +1,349 @@
+\contentsline {section}{\numberline {1}Introduction}{10}{section.1}%
+\contentsline {section}{\numberline {2}Formal Model}{12}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Program Representation}{12}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Control–Data Vector Space}{12}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Phasor Semantics of Statements}{13}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Program Evolution Operator}{14}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Loop Structures and Cyclic Trajectories}{14}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Fixed vs. Dynamic Dimensionality}{15}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Relation to Control Graphs and State Machines}{15}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Simulation and Vector Evolution}{15}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Phasorial Semantics and Circuit Mapping}{16}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Summary}{16}{subsection.2.10}%
+\contentsline {section}{\numberline {3}Vector Evolution Machine (VEM)}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1}State Representation}{17}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Phasorial Transition Model}{17}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Execution Semantics}{18}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Halting and Observation}{18}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Relation to Classical and Analog Execution Models}{18}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Quantum Specialization}{19}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Advantages of the VEM Approach}{19}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Comparison with Turing Machine}{19}{subsection.3.8}%
+\contentsline {paragraph}{Structural Comparison.}{20}{section*.2}%
+\contentsline {paragraph}{Computational Power and Extensions.}{21}{section*.3}%
+\contentsline {paragraph}{Summary.}{21}{section*.4}%
+\contentsline {subsubsection}{\numberline {3.8.1}Encoding a Turing Machine as a VEM}{22}{subsubsection.3.8.1}%
+\contentsline {paragraph}{Deterministic Turing machine (standard definition).}{22}{section*.5}%
+\contentsline {paragraph}{VEM state vector design.}{23}{section*.6}%
+\contentsline {paragraph}{Transition operator \(M\).}{23}{section*.7}%
+\contentsline {paragraph}{Implementation detail (selector logic via linear algebra).}{24}{section*.8}%
+\contentsline {paragraph}{Halting.}{25}{section*.9}%
+\contentsline {paragraph}{Worked tiny example.}{25}{section*.10}%
+\contentsline {paragraph}{Sparsity and practical considerations.}{25}{section*.11}%
+\contentsline {paragraph}{Correctness.}{26}{section*.12}%
+\contentsline {paragraph}{Remarks.}{26}{section*.13}%
+\contentsline {section}{\numberline {4}Control Vectors}{26}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Definition and Representation}{26}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Global State Structure}{27}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Branching and Looping Semantics}{28}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Phasor and Quantum Extensions}{28}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Halting States and Control Invariants}{29}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Role in the VEM Model}{29}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Parallel Execution Semantics}{29}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Superposed Control States}{29}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}Evolution of Parallel Control}{30}{subsubsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.3}Synchronization and Merging}{30}{subsubsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.4}Hardware Implications}{30}{subsubsection.4.7.4}%
+\contentsline {subsection}{\numberline {4.8}Summary}{31}{subsection.4.8}%
+\contentsline {section}{\numberline {5}Functions and Function Calls}{31}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Overview}{31}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Functions as Linear Operators}{32}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Entry, Exit and Control Encoding}{32}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Composition of Functions}{33}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Recursion and Fixed Points}{33}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Function Parameters and Closures}{33}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Integration with the Compiler}{33}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Parallel and Higher-Order Execution}{34}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Summary}{34}{subsection.5.9}%
+\contentsline {section}{\numberline {6}String as Vector}{34}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Phasorial Interpretation}{35}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Role in the Execution Model}{35}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Implications and Extensions}{36}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Data Structures in the VPL Formalism}{36}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Data Structures as Vector Subspaces}{36}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Array and Indexed Structures}{37}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Dynamic Structures: Stacks, Queues, and Graphs}{37}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Constraints and Phasorial Semantics}{38}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Parallel Execution on Data Structures}{38}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Implications for Hardware Realization}{39}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Parallel Execution: Algorithmic Examples}{39}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Phasorial and Vectorial Parallelism}{39}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Control Superposition and Phasorial Flows}{40}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Algorithmic Example: Parallel Accumulation}{40}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Phasorial Control of Multiple Loops}{40}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Dataflow vs Controlflow Parallelism}{41}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Example: Parallel Sum and Product}{41}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Advantages of the VPL Parallelism Model}{41}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Implications for Compilation and Synthesis}{42}{subsection.8.8}%
+\contentsline {section}{\numberline {9}Input and Output in the VPL Formalism}{42}{section.9}%
+\contentsline {subsection}{\numberline {9.1}I/O as Boundary Conditions}{42}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Linear Projection for Output}{43}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}I/O as Phasorial Interactions}{43}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Event-Driven vs Continuous Input}{43}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Hardware Realization}{44}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Compositionality}{44}{subsection.9.6}%
+\contentsline {section}{\numberline {10}General Algorithmic Procedure for VPL Encoding}{44}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Overview}{44}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Step-by-step procedure}{45}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Algorithmic summary}{47}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Remarks}{47}{subsection.10.4}%
+\contentsline {section}{\numberline {11}General Problem Formulation in VPL}{48}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Conceptual Overview}{48}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}General Procedure}{48}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Problem Encoding Summary}{51}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Remarks}{51}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Example: Direct Problem Formulation for a While Loop}{51}{subsection.11.5}%
+\contentsline {subsubsection}{\numberline {11.5.1}Step 1: Identify Problem Domain and Variables}{52}{subsubsection.11.5.1}%
+\contentsline {subsubsection}{\numberline {11.5.2}Step 2: Define Transformation Rule}{52}{subsubsection.11.5.2}%
+\contentsline {subsubsection}{\numberline {11.5.3}Step 3: Define Control and Halting Condition}{52}{subsubsection.11.5.3}%
+\contentsline {subsubsection}{\numberline {11.5.4}Step 4: Construct the Global Operator System}{52}{subsubsection.11.5.4}%
+\contentsline {subsubsection}{\numberline {11.5.5}Step 5: Solve the System Evolution}{53}{subsubsection.11.5.5}%
+\contentsline {subsubsection}{\numberline {11.5.6}Step 6: Interpretation in VPL Terms}{53}{subsubsection.11.5.6}%
+\contentsline {subsubsection}{\numberline {11.5.7}Step 7: Optional Control-Data Coupled Representation}{53}{subsubsection.11.5.7}%
+\contentsline {subsubsection}{\numberline {11.5.8}Step 8: Result}{54}{subsubsection.11.5.8}%
+\contentsline {subsection}{\numberline {11.6}Example: Direct Problem Formulation for Graph Traversal}{54}{subsection.11.6}%
+\contentsline {subsubsection}{\numberline {11.6.1}Step 1: Identify Problem Domain and Variables}{55}{subsubsection.11.6.1}%
+\contentsline {subsubsection}{\numberline {11.6.2}Step 2: Constructing the Connectivity (Adjacency) Matrix}{55}{subsubsection.11.6.2}%
+\contentsline {subsubsection}{\numberline {11.6.3}Step 3: Define the Traversal Transformation}{56}{subsubsection.11.6.3}%
+\contentsline {subsubsection}{\numberline {11.6.4}Step 4: Linearized VPL Formulation}{56}{subsubsection.11.6.4}%
+\contentsline {subsubsection}{\numberline {11.6.5}Step 5: Control Vector and Halting Condition}{56}{subsubsection.11.6.5}%
+\contentsline {subsubsection}{\numberline {11.6.6}Step 6: Numerical Example of Evolution}{57}{subsubsection.11.6.6}%
+\contentsline {subsubsection}{\numberline {11.6.7}Step 7: Phasor Interpretation}{57}{subsubsection.11.6.7}%
+\contentsline {subsubsection}{\numberline {11.6.8}Step 8: Summary of Vector Space Representation}{58}{subsubsection.11.6.8}%
+\contentsline {subsection}{\numberline {11.7}Direct Problem formulation for Parallel Graph Traversal}{58}{subsection.11.7}%
+\contentsline {subsubsection}{\numberline {11.7.1}Step 1: State variables and vector space}{58}{subsubsection.11.7.1}%
+\contentsline {subsubsection}{\numberline {11.7.2}Step 2: Connectivity (adjacency) operator}{59}{subsubsection.11.7.2}%
+\contentsline {subsubsection}{\numberline {11.7.3}Step 3: Linearized traversal operator and saturation}{59}{subsubsection.11.7.3}%
+\contentsline {subsubsection}{\numberline {11.7.4}Step 4: Parallel (superposed) initial condition}{60}{subsubsection.11.7.4}%
+\contentsline {subsubsection}{\numberline {11.7.5}Step 5: Control and global operator form}{60}{subsubsection.11.7.5}%
+\contentsline {subsubsection}{\numberline {11.7.6}Step 6: Phasor halting condition}{61}{subsubsection.11.7.6}%
+\contentsline {subsubsection}{\numberline {11.7.7}Step 7: Solve the evolution (numeric trace)}{61}{subsubsection.11.7.7}%
+\contentsline {subsubsection}{\numberline {11.7.8}Step 8: Parallelism interpretation}{62}{subsubsection.11.7.8}%
+\contentsline {subsubsection}{\numberline {11.7.9}Step 9: Hardware mapping remarks}{62}{subsubsection.11.7.9}%
+\contentsline {subsubsection}{\numberline {11.7.10}Summary}{62}{subsubsection.11.7.10}%
+\contentsline {section}{\numberline {12}Transformation Rules: From Algorithmic Constructs to VPL}{63}{section.12}%
+\contentsline {section}{\numberline {13}Problem Class to VPL Transformation Rules}{65}{section.13}%
+\contentsline {section}{\numberline {14}Canonical Problem Classes and Transformation Patterns}{67}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Canonical VPL Problem Classes}{68}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Transformation Rationale}{68}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Compositionality}{69}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Relation to Classical Complexity Classes}{69}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5}Implications}{69}{subsection.14.5}%
+\contentsline {section}{\numberline {15}Transformation Rules Table}{70}{section.15}%
+\contentsline {subsection}{\numberline {15.1}General Transformation Procedure}{71}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Compositional Transformation}{72}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Transformation Examples}{72}{subsection.15.3}%
+\contentsline {paragraph}{While Loop (Class 1):}{72}{section*.14}%
+\contentsline {paragraph}{Graph Traversal (Class 3):}{72}{section*.15}%
+\contentsline {paragraph}{Quantum Evolution (Class 10):}{73}{section*.16}%
+\contentsline {subsection}{\numberline {15.4}Automation and Compilation}{73}{subsection.15.4}%
+\contentsline {subsection}{\numberline {15.5}Representative Matrix Structures by Problem Class}{73}{subsection.15.5}%
+\contentsline {subsection}{\numberline {15.6}Foundational Construction of the Control Matrix \( M \)}{75}{subsection.15.6}%
+\contentsline {subsubsection}{\numberline {15.6.1}Primitive Matrices (Atomic Constructors)}{75}{subsubsection.15.6.1}%
+\contentsline {subsubsection}{\numberline {15.6.2}Composition Rules}{76}{subsubsection.15.6.2}%
+\contentsline {subsubsection}{\numberline {15.6.3}Example: While Loop Construction}{77}{subsubsection.15.6.3}%
+\contentsline {subsubsection}{\numberline {15.6.4}Hierarchy of Construction}{77}{subsubsection.15.6.4}%
+\contentsline {subsubsection}{\numberline {15.6.5}Universality of the Basis}{77}{subsubsection.15.6.5}%
+\contentsline {section}{\numberline {16}Constructive Algorithm Definition in VPL}{78}{section.16}%
+\contentsline {subsection}{\numberline {16.1}From Primitives to Algorithmic Constructs}{78}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Macro-Blocks and Building Blocks}{79}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.3}Constructive Procedure for Algorithm Definition}{79}{subsection.16.3}%
+\contentsline {subsection}{\numberline {16.4}Illustrative Example: While Loop}{80}{subsection.16.4}%
+\contentsline {subsection}{\numberline {16.5}Universality and Library Construction}{80}{subsection.16.5}%
+\contentsline {section}{\numberline {17}Examples}{81}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Numerical Example: Fully Explicit Matrix Computation}{81}{subsection.17.1}%
+\contentsline {subsubsection}{\numberline {17.1.1}Minimal Affine Matrix Form}{82}{subsubsection.17.1.1}%
+\contentsline {subsubsection}{\numberline {17.1.2}VPL Expanded Control--Data Matrix Form}{83}{subsubsection.17.1.2}%
+\contentsline {subsubsection}{\numberline {17.1.3}Step-by-Step Evolution in Expanded Form}{83}{subsubsection.17.1.3}%
+\contentsline {subsubsection}{\numberline {17.1.4}Comparison of the Two Forms}{84}{subsubsection.17.1.4}%
+\contentsline {subsection}{\numberline {17.2}Toy Example: String Equality — \texttt {"Hello"} == \texttt {"Hello"}}{84}{subsection.17.2}%
+\contentsline {subsection}{\numberline {17.3}Example: Two Parallel While Loops}{88}{subsection.17.3}%
+\contentsline {subsubsection}{\numberline {17.3.1}Minimal (data-only) affine model}{89}{subsubsection.17.3.1}%
+\contentsline {subsubsection}{\numberline {17.3.2}Expanded VPL Control--Data model}{89}{subsubsection.17.3.2}%
+\contentsline {paragraph}{Control--control block $M_{CC}$}{90}{section*.26}%
+\contentsline {paragraph}{Data--data block $M_{DD}$}{90}{section*.27}%
+\contentsline {paragraph}{Control-to-data coupling $B$ and offset $c_{\mathrm {full}}$}{90}{section*.28}%
+\contentsline {paragraph}{Phasorial halting conditions}{91}{section*.29}%
+\contentsline {subsubsection}{\numberline {17.3.3}Parallel activation and control superposition}{91}{subsubsection.17.3.3}%
+\contentsline {subsubsection}{\numberline {17.3.4}Numeric step-by-step example (synchronous increments)}{92}{subsubsection.17.3.4}%
+\contentsline {subsubsection}{\numberline {17.3.5}Asynchronous or unbalanced loops}{92}{subsubsection.17.3.5}%
+\contentsline {subsubsection}{\numberline {17.3.6}Hardware mapping implications}{92}{subsubsection.17.3.6}%
+\contentsline {subsubsection}{\numberline {17.3.7}Remarks}{93}{subsubsection.17.3.7}%
+\contentsline {subsection}{\numberline {17.4}Example: Graph Traversal}{93}{subsection.17.4}%
+\contentsline {subsubsection}{\numberline {17.4.1}Classical algorithmic description}{93}{subsubsection.17.4.1}%
+\contentsline {subsubsection}{\numberline {17.4.2}Graph as an adjacency matrix}{94}{subsubsection.17.4.2}%
+\contentsline {subsubsection}{\numberline {17.4.3}State vector representation}{94}{subsubsection.17.4.3}%
+\contentsline {subsubsection}{\numberline {17.4.4}Full VPL encoding}{94}{subsubsection.17.4.4}%
+\contentsline {subsubsection}{\numberline {17.4.5}Phasor halting condition}{95}{subsubsection.17.4.5}%
+\contentsline {subsubsection}{\numberline {17.4.6}Numeric execution trace}{95}{subsubsection.17.4.6}%
+\contentsline {subsubsection}{\numberline {17.4.7}Parallelism and superposition}{96}{subsubsection.17.4.7}%
+\contentsline {subsubsection}{\numberline {17.4.8}Hardware mapping remarks}{96}{subsubsection.17.4.8}%
+\contentsline {subsubsection}{\numberline {17.4.9}Summary}{96}{subsubsection.17.4.9}%
+\contentsline {subsection}{\numberline {17.5}Example: Parallel Graph Traversal}{97}{subsection.17.5}%
+\contentsline {subsubsection}{\numberline {17.5.1}Multiple traversal tasks}{97}{subsubsection.17.5.1}%
+\contentsline {subsubsection}{\numberline {17.5.2}Adjacency matrix representation}{97}{subsubsection.17.5.2}%
+\contentsline {subsubsection}{\numberline {17.5.3}Superposed initial state}{97}{subsubsection.17.5.3}%
+\contentsline {subsubsection}{\numberline {17.5.4}Control structure and total state}{98}{subsubsection.17.5.4}%
+\contentsline {subsubsection}{\numberline {17.5.5}Execution trace}{98}{subsubsection.17.5.5}%
+\contentsline {subsubsection}{\numberline {17.5.6}Phasor halting condition}{98}{subsubsection.17.5.6}%
+\contentsline {subsubsection}{\numberline {17.5.7}Discussion: Parallelism without control overhead}{99}{subsubsection.17.5.7}%
+\contentsline {subsubsection}{\numberline {17.5.8}Hardware mapping remarks}{99}{subsubsection.17.5.8}%
+\contentsline {subsubsection}{\numberline {17.5.9}Summary}{99}{subsubsection.17.5.9}%
+\contentsline {subsection}{\numberline {17.6}Example: Bubble Sort in VPL}{99}{subsection.17.6}%
+\contentsline {subsubsection}{\numberline {17.6.1}Classical pseudocode}{100}{subsubsection.17.6.1}%
+\contentsline {subsubsection}{\numberline {17.6.2}VPL structural decomposition}{100}{subsubsection.17.6.2}%
+\contentsline {subsubsection}{\numberline {17.6.3}Control and data interaction}{101}{subsubsection.17.6.3}%
+\contentsline {subsubsection}{\numberline {17.6.4}Phasor-based halting condition}{101}{subsubsection.17.6.4}%
+\contentsline {subsubsection}{\numberline {17.6.5}Example of matrix-level execution}{101}{subsubsection.17.6.5}%
+\contentsline {subsubsection}{\numberline {17.6.6}Expanded representation}{102}{subsubsection.17.6.6}%
+\contentsline {subsubsection}{\numberline {17.6.7}Discussion}{102}{subsubsection.17.6.7}%
+\contentsline {subsubsection}{\numberline {17.6.8}Conclusion}{103}{subsubsection.17.6.8}%
+\contentsline {subsection}{\numberline {17.7}Example: Direct Problem Formulation — Parallel Graph Traversal}{103}{subsection.17.7}%
+\contentsline {subsubsection}{\numberline {17.7.1}Problem statement}{103}{subsubsection.17.7.1}%
+\contentsline {subsubsection}{\numberline {17.7.2}State vectors and decomposition}{103}{subsubsection.17.7.2}%
+\contentsline {subsubsection}{\numberline {17.7.3}Adjacency operator}{104}{subsubsection.17.7.3}%
+\contentsline {subsubsection}{\numberline {17.7.4}VPL operator structure (conceptual)}{104}{subsubsection.17.7.4}%
+\contentsline {subsubsection}{\numberline {17.7.5}Initial condition (parallel seeds)}{105}{subsubsection.17.7.5}%
+\contentsline {subsubsection}{\numberline {17.7.6}Numeric evolution (step-by-step)}{105}{subsubsection.17.7.6}%
+\contentsline {paragraph}{Step 0 \(\rightarrow \) 1:}{106}{section*.30}%
+\contentsline {paragraph}{Step 1 \(\rightarrow \) 2:}{106}{section*.31}%
+\contentsline {paragraph}{Step 2 \(\rightarrow \) 3:}{107}{section*.32}%
+\contentsline {subsubsection}{\numberline {17.7.7}Phasor halting condition}{107}{subsubsection.17.7.7}%
+\contentsline {subsubsection}{\numberline {17.7.8}Discussion: parallelism and superposition}{107}{subsubsection.17.7.8}%
+\contentsline {subsubsection}{\numberline {17.7.9}Hardware mapping notes}{108}{subsubsection.17.7.9}%
+\contentsline {subsubsection}{\numberline {17.7.10}Summary}{108}{subsubsection.17.7.10}%
+\contentsline {section}{\numberline {18}Applications}{108}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Electric and Analog Mappings}{109}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}Quantum Mappings}{110}{subsection.18.2}%
+\contentsline {subsection}{\numberline {18.3}Vector Evolution Machines (VEMs)}{110}{subsection.18.3}%
+\contentsline {subsection}{\numberline {18.4}Unified Perspective on Physical Computation}{111}{subsection.18.4}%
+\contentsline {subsection}{\numberline {18.5}Electrical Circuit Mappings}{112}{subsection.18.5}%
+\contentsline {subsection}{\numberline {18.6}Digital Circuit Mappings}{113}{subsection.18.6}%
+\contentsline {subsection}{\numberline {18.7}Asynchronous Digital Circuit Mappings}{114}{subsection.18.7}%
+\contentsline {subsection}{\numberline {18.8}Analog Circuit Mappings}{115}{subsection.18.8}%
+\contentsline {paragraph}{Analog Representation of State.}{116}{section*.33}%
+\contentsline {paragraph}{Implementation via Op-Amps and Transconductance Networks.}{116}{section*.34}%
+\contentsline {paragraph}{Phasor Extension and Dynamic Behavior.}{117}{section*.35}%
+\contentsline {paragraph}{Hardware Correspondence.}{117}{section*.36}%
+\contentsline {paragraph}{Relation to Continuous-Time VEM.}{117}{section*.37}%
+\contentsline {paragraph}{Applications.}{117}{section*.38}%
+\contentsline {paragraph}{Summary.}{118}{section*.39}%
+\contentsline {subsection}{\numberline {18.9}Quantum Circuit Mappings}{118}{subsection.18.9}%
+\contentsline {paragraph}{Quantum Superposition and Control.}{119}{section*.40}%
+\contentsline {paragraph}{Measurement as Projection.}{119}{section*.41}%
+\contentsline {paragraph}{Relation to Quantum Circuits.}{119}{section*.42}%
+\contentsline {paragraph}{Summary.}{120}{section*.43}%
+\contentsline {subsection}{\numberline {18.10}VEM Hardware Realization}{120}{subsection.18.10}%
+\contentsline {paragraph}{Unified Principle.}{120}{section*.44}%
+\contentsline {paragraph}{Functional Components.}{120}{section*.45}%
+\contentsline {paragraph}{Digital VEM.}{121}{section*.46}%
+\contentsline {paragraph}{Analog VEM.}{121}{section*.47}%
+\contentsline {paragraph}{Quantum VEM.}{121}{section*.48}%
+\contentsline {paragraph}{Hybrid Implementations.}{122}{section*.49}%
+\contentsline {paragraph}{Parallelism and Self-Similarity.}{122}{section*.50}%
+\contentsline {paragraph}{Hardware-Level Summary.}{122}{section*.51}%
+\contentsline {paragraph}{Summary.}{122}{section*.52}%
+\contentsline {subsection}{\numberline {18.11}Quantum Circuit Mapping}{123}{subsection.18.11}%
+\contentsline {paragraph}{From Linear to Unitary Evolution.}{123}{section*.53}%
+\contentsline {paragraph}{VPL-to-Quantum Decomposition.}{123}{section*.54}%
+\contentsline {paragraph}{Example: Single-Variable Quantum Loop.}{124}{section*.55}%
+\contentsline {paragraph}{Phasor Interpretation in Quantum Domain.}{124}{section*.56}%
+\contentsline {paragraph}{Quantum VEM Architecture.}{125}{section*.57}%
+\contentsline {paragraph}{Comparison with Classical and Analog VEMs.}{125}{section*.58}%
+\contentsline {paragraph}{Summary.}{125}{section*.59}%
+\contentsline {paragraph}{Conclusion.}{125}{section*.60}%
+\contentsline {subsection}{\numberline {18.12}Hybrid Computing Architectures}{126}{subsection.18.12}%
+\contentsline {paragraph}{Unified Representation.}{126}{section*.61}%
+\contentsline {paragraph}{Domain-Specific Submatrices.}{127}{section*.62}%
+\contentsline {paragraph}{Hybrid State Vector.}{127}{section*.63}%
+\contentsline {paragraph}{Example: Hybrid Control of Quantum Subsystems.}{127}{section*.64}%
+\contentsline {paragraph}{Energy and Information Flow.}{128}{section*.65}%
+\contentsline {paragraph}{Hybrid Hardware Implications.}{128}{section*.66}%
+\contentsline {paragraph}{Unified Algorithmic Space.}{129}{section*.67}%
+\contentsline {paragraph}{Summary.}{129}{section*.68}%
+\contentsline {subsection}{\numberline {18.13}Unified Computational Substrate and Future Outlook}{129}{subsection.18.13}%
+\contentsline {paragraph}{Universality of the Vector Substrate.}{130}{section*.69}%
+\contentsline {paragraph}{Physical Interpretation.}{130}{section*.70}%
+\contentsline {paragraph}{Relationship to Existing Paradigms.}{130}{section*.71}%
+\contentsline {paragraph}{Composability and Modularity.}{131}{section*.72}%
+\contentsline {paragraph}{Future Directions.}{131}{section*.73}%
+\contentsline {paragraph}{Philosophical Implications.}{131}{section*.74}%
+\contentsline {paragraph}{Conclusion.}{131}{section*.75}%
+\contentsline {section}{\numberline {19}Compiler and Simulator Pipeline}{132}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Overview}{132}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Compiler Stages}{132}{subsection.19.2}%
+\contentsline {subsection}{\numberline {19.3}Intermediate Representations}{133}{subsection.19.3}%
+\contentsline {subsection}{\numberline {19.4}Mathematical Compilation and Vector Evolution}{134}{subsection.19.4}%
+\contentsline {subsection}{\numberline {19.5}Simulator Operation}{134}{subsection.19.5}%
+\contentsline {subsection}{\numberline {19.6}Phasorial Domain and Continuous Interpretation}{135}{subsection.19.6}%
+\contentsline {subsection}{\numberline {19.7}Relation to the Vector Evolution Machine}{135}{subsection.19.7}%
+\contentsline {subsection}{\numberline {19.8}Extensibility}{135}{subsection.19.8}%
+\contentsline {section}{\numberline {20}Implementation Details and Simulator Visualization}{135}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Implementation Structure}{136}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}Data Representation and Evolution}{136}{subsection.20.2}%
+\contentsline {subsection}{\numberline {20.3}State Evolution Algorithm}{137}{subsection.20.3}%
+\contentsline {subsection}{\numberline {20.4}Visualization of the Simulation Process}{137}{subsection.20.4}%
+\contentsline {subsection}{\numberline {20.5}Illustrative Example: While Loop}{137}{subsection.20.5}%
+\contentsline {subsection}{\numberline {20.6}Phasorial Interpretation}{138}{subsection.20.6}%
+\contentsline {subsection}{\numberline {20.7}Simulation Output}{138}{subsection.20.7}%
+\contentsline {subsection}{\numberline {20.8}Discussion}{139}{subsection.20.8}%
+\contentsline {section}{\numberline {21}Hardware Mappings and Experimental Implementations}{139}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Conceptual Overview}{139}{subsection.21.1}%
+\contentsline {subsection}{\numberline {21.2}Mapping to Digital Circuits}{140}{subsection.21.2}%
+\contentsline {subsection}{\numberline {21.3}Mapping to Analog Circuits}{140}{subsection.21.3}%
+\contentsline {subsection}{\numberline {21.4}Phasorial and Frequency-Domain Extensions}{141}{subsection.21.4}%
+\contentsline {subsection}{\numberline {21.5}Mapping to Quantum Circuits}{141}{subsection.21.5}%
+\contentsline {subsection}{\numberline {21.6}Experimental Implementations}{142}{subsection.21.6}%
+\contentsline {subsection}{\numberline {21.7}Discussion}{142}{subsection.21.7}%
+\contentsline {section}{\numberline {22}Compiler Architecture for Hardware Targets}{143}{section.22}%
+\contentsline {subsection}{\numberline {22.1}Pipeline Overview}{143}{subsection.22.1}%
+\contentsline {subsection}{\numberline {22.2}Intermediate Representations}{143}{subsection.22.2}%
+\contentsline {subsection}{\numberline {22.3}Backend Generators}{144}{subsection.22.3}%
+\contentsline {subsubsection}{\numberline {22.3.1}Digital Backend (Verilog/HDL)}{144}{subsubsection.22.3.1}%
+\contentsline {subsubsection}{\numberline {22.3.2}Analog Backend (SPICE Netlist)}{144}{subsubsection.22.3.2}%
+\contentsline {subsubsection}{\numberline {22.3.3}Quantum Backend (QASM Generator)}{145}{subsubsection.22.3.3}%
+\contentsline {subsection}{\numberline {22.4}Hardware Compilation Flow}{145}{subsection.22.4}%
+\contentsline {subsection}{\numberline {22.5}Optimization and Verification}{145}{subsection.22.5}%
+\contentsline {subsection}{\numberline {22.6}Discussion}{146}{subsection.22.6}%
+\contentsline {section}{\numberline {23}Mathematical Simulator and Execution Dynamics}{146}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Mathematical Formulation}{146}{subsection.23.1}%
+\contentsline {subsection}{\numberline {23.2}Control and Data Space Partitioning}{147}{subsection.23.2}%
+\contentsline {subsection}{\numberline {23.3}Execution Algorithm}{147}{subsection.23.3}%
+\contentsline {subsection}{\numberline {23.4}Phasorial Dynamics and Analog Behavior}{148}{subsection.23.4}%
+\contentsline {subsection}{\numberline {23.5}Symbolic Trace and State Visualization}{148}{subsection.23.5}%
+\contentsline {subsection}{\numberline {23.6}Unified Interpretation Across Physical Realizations}{149}{subsection.23.6}%
+\contentsline {subsection}{\numberline {23.7}Discussion}{149}{subsection.23.7}%
+\contentsline {section}{\numberline {24}Hardware Mapping: Electrical, Digital, and Quantum Implementations}{149}{section.24}%
+\contentsline {subsection}{\numberline {24.1}Unified Mapping Principle}{150}{subsection.24.1}%
+\contentsline {subsection}{\numberline {24.2}Electrical Circuit Mapping}{150}{subsection.24.2}%
+\contentsline {subsubsection}{\numberline {24.2.1}Mapping Rules}{150}{subsubsection.24.2.1}%
+\contentsline {subsection}{\numberline {24.3}Digital Circuit Mapping}{151}{subsection.24.3}%
+\contentsline {subsubsection}{\numberline {24.3.1}Mapping Procedure}{151}{subsubsection.24.3.1}%
+\contentsline {subsection}{\numberline {24.4}Quantum Circuit Mapping}{151}{subsection.24.4}%
+\contentsline {subsubsection}{\numberline {24.4.1}Mapping to Quantum Gates}{152}{subsubsection.24.4.1}%
+\contentsline {subsection}{\numberline {24.5}Asynchronous Computation and Hybrid Systems}{152}{subsection.24.5}%
+\contentsline {subsection}{\numberline {24.6}Implementation Pipeline}{152}{subsection.24.6}%
+\contentsline {subsection}{\numberline {24.7}Discussion}{152}{subsection.24.7}%
+\contentsline {section}{\numberline {25}VPL Compilation Pipeline}{153}{section.25}%
+\contentsline {subsection}{\numberline {25.1}Stage 1: Source Parsing (Extractor)}{153}{subsection.25.1}%
+\contentsline {subsection}{\numberline {25.2}Stage 2: Structural Translation (Translator)}{154}{subsection.25.2}%
+\contentsline {subsection}{\numberline {25.3}Stage 3: Expansion (Expander)}{155}{subsection.25.3}%
+\contentsline {subsection}{\numberline {25.4}Stage 4: Phasorial Transformation (Phasor Transformer)}{155}{subsection.25.4}%
+\contentsline {subsection}{\numberline {25.5}Stage 5: Mathematical Simulation}{155}{subsection.25.5}%
+\contentsline {subsection}{\numberline {25.6}Stage 6: Physical Mapping (Target Realization)}{156}{subsection.25.6}%
+\contentsline {subsection}{\numberline {25.7}Summary Table}{156}{subsection.25.7}%
+\contentsline {section}{\numberline {26}Unified Physical Computation Theory and Discussion}{156}{section.26}%
+\contentsline {subsection}{\numberline {26.1}Unified Vector Formalism}{157}{subsection.26.1}%
+\contentsline {subsection}{\numberline {26.2}Physical Semantics of the Transition Matrix}{157}{subsection.26.2}%
+\contentsline {subsection}{\numberline {26.3}Unification of Physical Models}{158}{subsection.26.3}%
+\contentsline {subsection}{\numberline {26.4}Energy, Information, and Evolution}{158}{subsection.26.4}%
+\contentsline {subsection}{\numberline {26.5}Beyond Church–Turing: Physical Computation as a Generalization}{159}{subsection.26.5}%
+\contentsline {subsection}{\numberline {26.6}Emergent Computation and Hybrid Models}{159}{subsection.26.6}%
+\contentsline {subsection}{\numberline {26.7}Discussion and Future Directions}{160}{subsection.26.7}%
+\contentsline {section}{\numberline {27}Conclusion and Future Work}{160}{section.27}%
+\contentsline {subsection}{\numberline {27.1}Summary of Contributions}{160}{subsection.27.1}%
+\contentsline {subsection}{\numberline {27.2}Implications}{161}{subsection.27.2}%
+\contentsline {subsection}{\numberline {27.3}Future Research Directions}{162}{subsection.27.3}%
+\contentsline {subsection}{\numberline {27.4}Concluding Remarks}{162}{subsection.27.4}%
+\contentsline {section}{\numberline {28}Appendix A}{164}{section.28}%
+\contentsline {subsection}{\numberline {28.1}Linear affine operator}{164}{subsection.28.1}%
