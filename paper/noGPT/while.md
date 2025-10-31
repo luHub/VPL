@@ -10,7 +10,17 @@ We will visit for now "Revised Report on the Algorithmic Language Algol 60". Lat
 
 ## Revised Report on the Algorithmic Language Algol 60
 
-(Add informaiton extracted from this report)
+From:
+
+2. BASIC SYMBOLS, IDENTIFIERS, NUMBERS, AND STRINGS. BASIC CONCEPTS.
+```
+<separator>::=  while
+```
+
+4.6.1. Syntax
+```
+<arithmetic expression> while <Boolean expression>
+```
 
 
 ## VPL
