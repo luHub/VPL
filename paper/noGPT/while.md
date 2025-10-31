@@ -21,7 +21,11 @@ From:
 ```
 <arithmetic expression> while <Boolean expression>
 ```
-
+```
+<delimiter) :: <operator>|<separator <bracket> <declarator> <specificator>
+<operator>::= <arithmetic operator> <relational operator>
+Logical operator> <sequential operator>
+```
 
 ## VPL
 
