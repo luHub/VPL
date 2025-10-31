@@ -1,4 +1,7 @@
 # NOTES
+## Action plan
+
+For 0.0.3 we will explore the for loop. but also we will explore semantically the while and the for. this will give us an interesting framework to waste as much time as possible in the most creative ways... I am joking... not joking... you will never know...
 
 ## Thoughts 
 
