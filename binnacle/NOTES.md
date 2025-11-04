@@ -1,4 +1,10 @@
 # NOTES
+
+## Thoughts
+
+Once VPL works, I would like to create an hybrid architecture that each part is the best for different parts, combining analog,digital and quantum togheter.
+Doing good benchmarking between different implementations for each component. Would be fun. 
+
 ## Action plan
 
 For 0.0.3 we will explore the for loop. but also we will explore semantically the while and the for. this will give us an interesting framework to waste as much time as possible in the most creative ways... I am joking... not joking... you will never know...
