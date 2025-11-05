@@ -28,7 +28,10 @@ Logical operator> <sequential operator>
 ```
 # C
 
+Original from Appendix A of C Programming Language Book. 
+
 https://www.cs.man.ac.uk/~pjj/bnf/c_syntax.bnf
+
 https://cs.wmich.edu/~gupta/teaching/cs4850/sumII06/The%20syntax%20of%20C%20in%20Backus-Naur%20form.htm
 
 ## VPL
