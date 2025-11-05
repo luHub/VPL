@@ -2,6 +2,10 @@
 
 ## Thoughts
 
+There are some points of views that worth to explore, going back to Edsger Dijkstra that might bring some insights to VPL.  
+
+## Thoughts
+
 Once VPL works, I would like to create an hybrid architecture that each part is the best for different parts, combining analog,digital and quantum togheter.
 Doing good benchmarking between different implementations for each component. Would be fun. 
 
