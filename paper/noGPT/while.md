@@ -30,9 +30,35 @@ Logical operator> <sequential operator>
 
 Original from Appendix A of C Programming Language Book. 
 
-https://www.cs.man.ac.uk/~pjj/bnf/c_syntax.bnf
+```
+A.9.5 Iteration Statements
 
-https://cs.wmich.edu/~gupta/teaching/cs4850/sumII06/The%20syntax%20of%20C%20in%20Backus-Naur%20form.htm
+Iteration statements specify looping. 
+ iteration-statement:
+ while (expression) statement
+ do statement while (expression);
+ for (expressionopt; expressionopt; expressionopt) statement
+
+In the while and do statements, the substatement is executed repeatedly so long as the value of the 
+expression remains unequal to 0; the expression must have arithmetic or pointer type. With while, the 
+test, including all side effects from the expression, occurs before each execution of the statement; with 
+do, the test follows each iteration.
+
+
+In the for statement, the first expression is evaluated once, and thus specifies initialization for the loop. 
+There is no restriction on its type. The second expression must have arithmetic or pointer type; it is evaluated before each iteration, and if it becomes equal to 0, the for is terminated. The third expression is evaluated after each iteration, and thus specifies a re-initialization for the loop. There is no restriction on its type. Side-effects from each expression are completed immediately after its evaluation. If the substatement does not contain continue, a statement 
+
+ for (expression1; expression2; expression3) statement
+is equivalent to 
+expression1;
+while (expression2) {
+ statement
+ expression3;
+}
+
+Any of the three expressions may be dropped. A missing second expression makes the implied test 
+equivalent to testing a non-zero element.
+```
 
 ## VPL
 
