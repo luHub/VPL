@@ -4,6 +4,8 @@
 
 There are some points of views that worth to explore, going back to Edsger Dijkstra that might bring some insights to VPL.  
 
+let's check "A Primer of ALGOL 60 Programming"
+
 ## Thoughts
 
 Once VPL works, I would like to create an hybrid architecture that each part is the best for different parts, combining analog,digital and quantum togheter.
