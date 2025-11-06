@@ -60,10 +60,11 @@ Any of the three expressions may be dropped. A missing second expression makes t
 equivalent to testing a non-zero element.
 ```
 
-## VPL
+## Antikythera mechanism
 
-It would be nice to map the "while" to the Antikythera mechanism (100 BCE) and Jacquard's loom machines. The intuition is that if these machines could be described
-in terms of Vectors or differential equations or VPL. We could have another link betwen a physical realization and programming semantics. 
+It would be nice to map the "while" to the Antikythera mechanism (100 BCE) and Jacquard's loom machines. 
+
+
 
 ### References
 
