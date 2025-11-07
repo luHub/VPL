@@ -58,16 +58,34 @@ while (expression2) {
 
 Any of the three expressions may be dropped. A missing second expression makes the implied test 
 equivalent to testing a non-zero element.
+
 ```
+
+## Ada Lovelace's notes
+
+I could not see a "while", here.  
 
 ## Antikythera mechanism
 
-It would be nice to map the "while" to the Antikythera mechanism (100 BCE) and Jacquard's loom machines. 
+I am too lazy to check for a while here... 
+
+## Jacquard's loom machines. 
+
+I am too lazy to check for a while here... 
+
+## Realization 
+
+Why did not anyone mapped this already? that would had save me a lot of time. 
+
+## A VPL "while"
+
+After a careful analysis a "while" goes in circles just as a feedback loop or a phasor with a halting condition. 
+
+
 
 
 
 ### References
-
 - "Revised Report on the Algorithmic Language Algol 60" (1962) https://www.algol60.org/reports/algol60_rr.pdf
 - Edsger Dijkstra's "Go To Statement Considered Harmful" (1968)
 - Ada Lovelace's notes 
