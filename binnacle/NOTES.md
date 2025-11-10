@@ -1,5 +1,9 @@
 # NOTES
 
+## Reading Backus,Dijkstra
+
+I kind of share some Backus mindset regarding equational reasoning to certain extent. Mine is more vectorial reasoning. time to read more 
+
 ## Thoughts
 
 There are some points of views that worth to explore, going back to Edsger Dijkstra that might bring some insights to VPL.  
