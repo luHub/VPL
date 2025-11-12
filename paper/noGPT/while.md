@@ -77,12 +77,16 @@ I am too lazy to check for a while here...
 
 Why did not anyone mapped this already? that would had save me a lot of time. 
 
+## Periodic Function
+
+
+
+
 ## A VPL "while"
 
 After a careful analysis a "while" goes in circles just as a feedback loop or a phasor with a halting condition. 
 
-
-
+First attempt starts on a periodic function,We start from a periodic function. 
 
 
 ### References
