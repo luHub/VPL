@@ -1,5 +1,9 @@
 # NOTES
 
+## Notes
+
+Later with VPL we will explore a frontier between external and internal mediums. modelling the external part as chaos, but understanding how the internal one react to it.
+
 ## Reading Backus,Dijkstra
 
 I kind of share some Backus mindset regarding equational reasoning to certain extent. Mine is more vectorial reasoning. time to read more 
