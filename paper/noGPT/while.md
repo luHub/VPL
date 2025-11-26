@@ -84,9 +84,25 @@ Why did not anyone mapped this already? that would had save me a lot of time.
 
 ## A VPL "while"
 
-After a careful analysis a "while" goes in circles just as a feedback loop or a phasor with a halting condition. 
+After a careful analysis a "while" goes in circles just as a feedback loop or a phasor until a halting condition is reached. 
+```
+while(expression){ statement }
 
-First attempt starts on a periodic function,We start from a periodic function. 
+   expression => (Condition) 
+   statement  => (Execution block) will this ever act on the condition?) YES/NO/DW/DC -> Don't care
+
+Remarks: 
+Solution one: you are either in the condition or you are in the statement
+Solution two: You are in both...
+
+So for VPL, while loops will be in line with "solution one".
+
+For solution two, we will introduce another reserved world a new one called "Phasorial Control Activaton" or "phont" because I am not going to to steal words anymore.
+We will research on this later.
+
+
+
+```
 
 
 ### References
