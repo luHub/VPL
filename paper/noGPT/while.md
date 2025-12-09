@@ -100,7 +100,12 @@ So for VPL, while loops will be in line with "solution one".
 For solution two, we will introduce another reserved world a new one called "Phasorial Control Activaton" or "phont" because I am not going to to steal words anymore.
 We will research on this later.
 
+For approach 1:
+-Create a matrix representation of the 
+path. Condition-Execution-Condition-Execution...
+-Create a matrix representation for control 
 
+Pictorially. I have analogies but... One is the road, the other the car... 
 
 ```
 
