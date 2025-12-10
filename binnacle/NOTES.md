@@ -1,8 +1,28 @@
 # NOTES
 
+A section on notes and ideas
+
 ## Notes
 
 Later with VPL we will explore a frontier between external and internal mediums. modelling the external part as chaos, but understanding how the internal one react to it.
+
+## Software Design another approach 
+
+We will use for VPL as Design Methodology:
+
+Software design in an act of understaing a complex problem and find a solution given a set of constraints. Now a days the prefered approach is from an engineering starting point, mostly coping and fitting ideas from other more mature engineering practices. This approach has re-written and re-applied concepts that might work
+to some extend with certain level of success in other contexts with the illusion that they will work on Software. Software is not only an engineering, is also science, is something else, it has a certain unique mix that make it different from classical engineering disciplines, on top of that is a young engineering, so is expected that how we reason about it will change in the years to come.
+
+We would like to propose a different approach to system design. Starting this journey at a philosophical level to deal with abstractions. Is not that we don't
+agree with the current body of knowledge, is more that it is incomplete, and this is just another branch of exploration. 
+
+Conways law states that "the structure of any system a company designs will reflect the organization's communication structure". I have seen this pattern 
+and also the other way around, so if this happens at "organizational level", we would like to explore what might happen at a personal level. In other words, 
+is the well beign, mind clarity, complexes, emotions linked to how code is written? Is bold to assume without data that "Contoling people will write code that has a lot of control", "Ignorant people will write code that will miss some important considerations", but seems to be a feasable cause effect scenario.
+
+I would prefer for now to map philosophy to design, but at very abstract level, and see if we can create something else, just for fun. 
+
+
 
 ## Reading Backus,Dijkstra
 
