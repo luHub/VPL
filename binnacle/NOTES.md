@@ -20,7 +20,7 @@ Conways law states that "the structure of any system a company designs will refl
 and also the other way around, so if this happens at "organizational level", we would like to explore what might happen at a personal level. In other words, 
 is the well beign, mind clarity, complexes, emotions linked to how code is written? Is bold to assume without data that "Contoling people will write code that has a lot of control", "Ignorant people will write code that will miss some important considerations", but seems to be a feasable cause effect scenario.
 
-I would prefer for now to map philosophy to design, but at very abstract level, and see if we can create something else, just for fun. 
+I would prefer for now to map philosophy to design, but at very abstract level, and see if we can create something else, just for fun. We need to come with new terms, new vocabulary and free our mind from bias of re-using re-writting definitions, again just for fun. 
 
 
 
