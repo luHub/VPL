@@ -22,6 +22,16 @@ is the well beign, mind clarity, complexes, emotions linked to how code is writt
 
 I would prefer for now to map philosophy to design, but at very abstract level, and see if we can create something else, just for fun. We need to come with new terms, new vocabulary and free our mind from bias of re-using re-writting definitions, again just for fun. 
 
+### The influence of "psyche" in software design: Use case Temple OS"
+
+To understand what is considered "normal" in the surface, a good starting point is to consider what is not normal. There are 
+few publicly know studies in the influence of the "psyche" in software design, because is considered an "Engineering", I think is not entirely true.
+
+Temple OS was developed by Terry Davis who according to Wikipedia had a history of mental problems. Therefore is interesting to point out the reflection of those issues in the final product that he made by himself called Temple OS. Now, "normal" people or how they called themselves "Sofware Engineers" or "Software Architects", labeled as "normal people" still had triats of personallity that might influence the way they conceive, and create solutions. It is worth to explore that the real ingenous part of this discipline relies exactly in this point a "personality reflection" and that reflection to the code is what actually distinguishes a "good" from a "terrible" implementation. Also this could explain why the best companies, the best software are the ones with only the vision of one mind (less reflection) that is clear and presice. So the failure of "commetee solutions" in software which create mediocrity only acceptable in low competitive markets. 
+
+My prediction and opinion that now a days, with the advent of LLMs the exercise of reflection will get lost if not used correctly, which will create an entire body of shallow applications and a enormous body of shallow "developers" givin enormous amounts of useless code.  
+
+#### Technical Mappings 
 
 
 ## Reading Backus,Dijkstra
