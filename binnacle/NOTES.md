@@ -31,7 +31,17 @@ Temple OS was developed by Terry Davis who according to Wikipedia had a history 
 
 My prediction and opinion that now a days, with the advent of LLMs the exercise of reflection will get lost if not used correctly, which will create an entire body of shallow applications and a enormous body of shallow "developers" givin enormous amounts of useless code.  
 
-#### Technical Mappings 
+### Recipes
+
+- Avoid going directly into vendor architectural design patters. They are good but focused solely on creating a solution based on their offerings.
+
+- Go first for simple profs of concept. carefully defining what you need now, towards an end goal. 
+
+- Write PoC code togheter with the specification, as writing the PoC will bound the specification to aore presice language. When I say write, you, not an LLM until you bound with the code. 
+
+
+
+
 
 
 ## Reading Backus,Dijkstra
