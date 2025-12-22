@@ -39,6 +39,9 @@ My prediction and opinion that now a days, with the advent of LLMs the exercise 
 
 - Write PoC code togheter with the specification, as writing the PoC will bound the specification to aore presice language. When I say write, you, not an LLM until you bound with the code. 
 
+- Code is a reflexion of your thinking process, a person that thinks that working more will create more value, will end up writing processesthat needs people to work long hours to work with. A disorganized person will write code that is difficult to organize, a person that has fear to share knowledge will write obscure code that only understable to that person, and so on. Code is reflexión of the person writing the code, as solutions reflects the shape of organizations.
+
+- All the modern design practices ended up adding more to the process than actual value. Don't follow them blindly over time. what worked on a time frame might not work in another one. Do not avoid the mental challenge to adapt over time, to challenge control,even adapting by laziness is preferred asking why really need to do this?
 
 
 
