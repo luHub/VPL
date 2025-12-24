@@ -45,7 +45,7 @@ My prediction and opinion that now a days, with the advent of LLMs the exercise 
 
 - All the modern design practices ended up adding more to the process than actual value. Don't follow them blindly over time. what worked on a time frame might not work in another one. Do not avoid the mental challenge to adapt over time, to challenge control or status-quo,even adapting by laziness is preferred asking why really need to do this?
 
-
+- I think is good that code reflects the mindset of a programmer, because if code is a reflection of your thinking process then the more different personalities the more rich code that is created. In my opinion innovation comes from the thinking process that gets better as more different mindsets solve a problem. If we make this a standard process then innovation is lost. 
 
 
 
