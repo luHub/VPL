@@ -4,7 +4,17 @@ A section on notes and ideas
 
 ## Notes
 
-Later with VPL we will explore a frontier between external and internal mediums. modelling the external part as chaos, but understanding how the internal one react to it.
+
+
+## Software Design another approach 
+
+Intuition wins over logic as logic will come later. Intuition is the compass to navigate infinity, with logic we could go from A to B, But knowing where to go
+does not belong to pure logic and science is imcomplete and a lot is still there to discover. As part of this new approach we start on the side on the things that cannot be measured, cannot be predicted, cannot be seen, and use our intuition to navigate that. 
+
+In a very naive classification there are two types of programmers, the craftman (who beling) and the artificials (who dont belong). The later group always suffers on their own demise... trying to belong to a place they do not belong, this group lacks or supress any intuition which they won't have in the first place and just use metrics, kpis and other means to measure on what they consider success. Detail is that you can't measure what you don't understand. Later, they try to mimic or excel imitating, they become lost or useless in the advent of the minor smaller changes in the field landscape. This profession is about sculping systems, LLMs, IDEs, and languages are just tools, just like in any craftmanship. If you are in this group, consider if you really like this, or you just want to work in the digital version of blockbuster to earn lots of money. If money is your main driver, start in the business sector where you trully belong.
+
+For the first group, the craftman, is possible to flow like water, using the intuition and inspiration to create systems. This approach considers 
+exploring intuition first and then the rational part later. 
 
 ## Software Design another approach 
 
@@ -18,7 +28,7 @@ agree with the current body of knowledge, is more that it is incomplete, and thi
 
 Conways law states that "the structure of any system a company designs will reflect the organization's communication structure". I have seen this pattern 
 and also the other way around, so if this happens at "organizational level", we would like to explore what might happen at a personal level. In other words, 
-is the well beign, mind clarity, complexes, emotions linked to how code is written? Is bold to assume without data that "Contoling people will write code that has a lot of control", "Ignorant people will write code that will miss some important considerations", but seems to be a feasable cause effect scenario.
+is the well beign, mind clarity, complexes, emotions linked to how code is written? Is bold to assume without data that "Controlling people will write code that has a lot of control", "Ignorant people will write code that will miss some important considerations", but seems to be a feasable cause effect scenario.
 
 I would prefer for now to map philosophy to design, but at very abstract level, and see if we can create something else, just for fun. We need to come with new terms, new vocabulary and free our mind from bias of re-using re-writting definitions, again just for fun. 
 
@@ -47,7 +57,8 @@ My prediction and opinion that now a days, with the advent of LLMs the exercise 
 
 - I think is good that code reflects the mindset of a programmer, because if code is a reflection of your thinking process then the more different personalities the more rich code that is created. In my opinion innovation comes from the thinking process that gets better as more different mindsets solve a problem. If we make this a standard process then innovation is lost. 
 
-
+## Later on VPL
+Later with VPL we will explore a frontier between external and internal mediums. modelling the external part as chaos, but understanding how the internal one react to it.
 
 ## Reading Backus,Dijkstra
 
