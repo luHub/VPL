@@ -9,12 +9,13 @@ A section on notes and ideas
 ## Software Design another approach 
 
 Intuition wins over logic as logic will come later. Intuition is the compass to navigate infinity, with logic we could go from A to B, But knowing where to go
-does not belong to pure logic as science is totally incomplete and there is a lot there to discover. As part of this "new" approach we start on the side on the things that cannot be measured, cannot be predicted, cannot be seen, and use our intuition to navigate that. 
+does not belong to pure logic as science is totally incomplete and there is a lot there to discover. As part of this pproach we start on the side on the things that cannot be measured, cannot be predicted, cannot be seen, and use our intuition to navigate that. 
 
-In a very naive classification there are two types of programmers, the craftman (who belong) and the artificials (who dont belong). The later group always suffers on their own demise... trying to belong to a place they do not belong, this group lacks or supress any intuition which they won't have in the first place and just use metrics, kpis and other means to measure on what they consider success. Detail is that you can't measure what you don't understand. Later, they try to mimic or excel imitating, they become lost or useless in the advent of the minor smaller changes in the field landscape. This profession is about sculping systems, LLMs, IDEs, and languages are just tools, just like in any craftmanship. If you are in this group, consider if you really like this, or you just want to work in the digital version of blockbuster to earn lots of money. If money is your main driver, start in the business sector where you trully belong.
+In a very naive classification there are two types of programmers, the craftman (who belong) and the artificials (who dont belong). The later group always suffers on their own demise... trying to belong to a place they do not belong, this group lacks or supress any intuition which they won't have in the first place and just use metrics, kpis and other means to measure on what they consider success. Detail is that you can't measure what you don't understand. Later, they try to mimic or excel imitating, they become lost or useless in the advent of the smaller change in the field landscape. This profession is about sculping systems, LLMs, IDEs, and languages are just tools, just like in any craftmanship. If you are in this group, consider if you really like this, or you just want to work in the digital version of blockbuster to earn lots of money. If money is your main driver, start in the business sector where you trully belong.
 
 For the first group, the craftman, is possible to flow like water, using the intuition and inspiration to create systems. This approach considers 
-exploring intuition first and then the rational part later. 
+exploring intuition first and then the rational part later. Start with an idea, this will take you 10 years, so no rush, from your idea do the smallest effort possible to write a solution, work in very small understandable deltas, and do a 3 or 4 levels deep exploration of what the code is doing in every step. Now, every time you dive down, read and study what is happening, might take you a lot of time but there is not rush. 
+
 
 ## Software Design another approach 
 
