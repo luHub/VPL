@@ -5,40 +5,45 @@ A section on notes and ideas
 ## Notes
 
 
+## Software another approach
 
-## Software Design another approach 
+What I am trying to explain is that Software engineering requires a set of social/technical skills that are obtained by doing, it is a personal experience. The mindset of an artisan or artist does not couple with linear or exponential productivity fallacies created to appeal desires for immediate wealth. 
+
+There are a tons of books, tons of videos, tons of opinions but your own proper interpretation is the key. 
+
+## Software another approach 
 
 Intuition wins over logic as logic will come later. Intuition is the compass to navigate infinity, with logic we could go from A to B, But knowing where to go
-does not belong to pure logic as science is totally incomplete and there is a lot there to discover. As part of this pproach we start on the side on the things that cannot be measured, cannot be predicted, cannot be seen, and use our intuition to navigate that. 
+does not belong to pure logic as science is totally incomplete and there is a lot there to discover. As part of this approach we start on the side on the things that cannot be measured, cannot be predicted, cannot be seen, and use our intuition to navigate that. 
 
-In a very naive classification there are two types of programmers, the craftman (who belong) and the artificials (who dont belong). The later group always suffers on their own demise... trying to belong to a place they do not belong, this group lacks or supress any intuition which they won't have in the first place and just use metrics, kpis and other means to measure on what they consider success. Detail is that you can't measure what you don't understand. Later, they try to mimic or excel imitating, they become lost or useless in the advent of the smaller change in the field landscape. This profession is about sculping systems, LLMs, IDEs, and languages are just tools, just like in any craftmanship. If you are in this group, consider if you really like this, or you just want to work in the digital version of blockbuster to earn lots of money. If money is your main driver, start in the business sector where you trully belong.
+In a very naive classification there are two types of programmers, the craftman (who belong) and the artificials (who dont belong). The later group always suffers on their own demise... trying to belong to a place they do not belong, this group lacks or supress any intuition which they won't have in the first place and just use metrics, kpis and other means to measure on what they consider success. Detail is that you can't measure what you don't amd can't understand. Later, they try to mimic or excel imitating, they become lost or useless in the advent of the smaller change in the field landscape. This profession is about sculping systems, LLMs, IDEs, and languages are just tools, just like in any craftmanship. If you are in this group, consider if you really like this, or you just want to work in the digital version of blockbuster to earn lots of money. If money is your main driver, start in the business sector where you trully belong.
 
 For the first group, the craftman, is possible to flow like water, using the intuition and inspiration to create systems. This approach considers 
 exploring intuition first and then the rational part later. Start with an idea, this will take you 10 years, so no rush, from your idea do the smallest effort possible to write a solution, work in very small understandable deltas, and do a 3 or 4 levels deep exploration of what the code is doing in every step. Now, every time you dive down, read and study what is happening, might take you a lot of time but there is not rush. 
 
 
-## Software Design another approach 
+## Software another approach 
 
 We will use for VPL as Design Methodology:
 
 Software design in an act of understaing a complex problem and find a solution given a set of constraints. Now a days the prefered approach is from an engineering starting point, mostly coping and fitting ideas from other more mature engineering practices. This approach has re-written and re-applied concepts that might work
 to some extend with certain level of success in other contexts with the illusion that they will work on Software. Software is not only an engineering, is also science, is something else, it has a certain unique mix that make it different from classical engineering disciplines, on top of that is a young engineering, so is expected that how we reason about it will change in the years to come.
 
-We would like to propose a different approach to system design. Starting this journey at a philosophical level to deal with abstractions. Is not that we don't
+I would like to propose a different approach to do software. Starting this journey at a philosophical level to deal with abstractions. Is not that I don't
 agree with the current body of knowledge, is more that it is incomplete, and this is just another branch of exploration. 
 
 Conways law states that "the structure of any system a company designs will reflect the organization's communication structure". I have seen this pattern 
-and also the other way around, so if this happens at "organizational level", we would like to explore what might happen at a personal level. In other words, 
+and also the other way around, so if this happens at "organizational level", I would like to explore what might happen at a personal level. In other words, 
 is the well beign, mind clarity, complexes, emotions linked to how code is written? Is bold to assume without data that "Controlling people will write code that has a lot of control", "Ignorant people will write code that will miss some important considerations", but seems to be a feasable cause effect scenario.
 
 I would prefer for now to map philosophy to design, but at very abstract level, and see if we can create something else, just for fun. We need to come with new terms, new vocabulary and free our mind from bias of re-using re-writting definitions, again just for fun. 
 
-### The influence of "psyche" in software design: Use case Temple OS"
+### Case example: The influence of "psyche" in software design: Use case Temple OS"
 
 To understand what is considered "normal" in the surface, a good starting point is to consider what is not normal. There are 
-few publicly know studies in the influence of the "psyche" in software design, because is considered an "Engineering", I think is not entirely true.
+few publicly know studies in the influence of the "psyche" in software design, because is considered an "Engineering", I think this is not entirely true.
 
-Temple OS was developed by Terry Davis who according to Wikipedia had a history of mental problems. Therefore is interesting to point out the reflection of those issues in the final product that he made by himself called Temple OS. Now, "normal" people or how they called themselves "Sofware Engineers" or "Software Architects", labeled as "normal people" still had triats of personallity that might influence the way they conceive, and create solutions. It is worth to explore that the real ingenous part of this discipline relies exactly in this point a "personality reflection" and that reflection to the code is what actually distinguishes a "good" from a "terrible" implementation. Also this could explain why the best companies, the best software are the ones with only the vision of one mind (less reflection) that is clear and presice. So the failure of "commetee solutions" in software which create mediocrity only acceptable in low competitive markets. 
+Temple OS was developed by Terry Davis who according to Wikipedia had a history of mental problems. Therefore is interesting to point out the reflection of those issues in the final product that he made by himself called Temple OS. Now, "normal" people or how they called themselves "Sofware Engineers" or "Software Architects", labeled as "normal people" still had triats of personallity that might influence the way they conceive, and create solutions. It is worth to explore that the real ingenous part of this discipline relies exactly in this point a "personality reflection" and that reflection to the code is what actually distinguishes a "good" from a "terrible" implementation. Also this could explain why the best companies, the best software are the ones with only the vision of one mind (less reflection) that is clear and presice. So the failure of "commetee solutions" in software which create mediocrity only acceptable in low competitive markets or for companies that are bailed out by tax payers. 
 
 My prediction and opinion that now a days, with the advent of LLMs the exercise of reflection will get lost if not used correctly, which will create an entire body of shallow applications and a enormous body of shallow "developers" and enormous amounts of useless code.  
 
@@ -50,13 +55,15 @@ My prediction and opinion that now a days, with the advent of LLMs the exercise 
 
 - Write PoC code togheter with the specification, as writing the PoC will bound the specification to a more presice language. When I say write, you, not an LLM until you bound with the code. 
 
-- Code is a reflexion of your thinking process, influenced (need research here) by a person unconscious,by your shadow (if you are into Jungian school) a person that thinks that working more will create more value, will end up in a writing processes that needs people to work long hours to work with. A disorganized person will write code that is difficult to organize, a person that has fear to share knowledge will write obscure code that only understable to that person, and obsessive compulsive order person will create such much order that the code will be difficult to bend, disguising it as "clean code" in a total negation of an unhealthy metal issue, the "code becomes the shadow". Code is reflexión of the person writing the code, as solutions reflects the shape of organizations.
+- Code is a reflexion of your thinking process, influenced (need research here) by a person unconscious,by your shadow (if you are into Jungian school) a person that thinks that working more will create more value, will end up in a writing processes that needs people to work long hours to work with. A disorganized person will write code that is difficult to navigate, a person that has fear to share knowledge will write obscure code that only understable to that person, and obsessive compulsive order person will create such much order that the code will be difficult to bend, disguising it as "clean code" in a total negation of an unhealthy metal issue, the "code becomes the shadow". Code is a reflexión of the person writing the code, as solutions reflects the shape of organizations.
 
 - Bonding with code suppose an exercise that needs years of preparation and practice, it could start in different places. From physics, solid state devides, electronics, CPUs, and finally code, and writing a lot of code. But there in another process that starts in philosophy, mathematics, and language studies. One approach path is abstract and the other is concrete. They touch eventually in a frontier when a proper language transforms into 0s and 1s. But how you approach and abstract solution is a very abstract process that needs a very prepared mind. lack of knowledge in general will impact solutions. The more a "programmer" reads, study, practice the more rich of options will have to define a solution. An empty mind will create an empty solution. In my opinion this is why people in this profession burn out, their intellectual limit,lack of courage, lack of clarity, lack of skills in general get exposed as wrong paths are choosed in the design process. 
 
 - All the modern design practices ended up adding more to the process than actual value. Don't follow them blindly over time. what worked on a time frame might not work in another one. Do not avoid the mental challenge to adapt over time, to challenge control or status-quo,even adapting by laziness is preferred asking why really need to do this?
 
-- I think is good that code reflects the mindset of a programmer, because if code is a reflection of your thinking process then the more different personalities the more rich code that is created. In my opinion innovation comes from the thinking process that gets better as more different mindsets solve a problem. If we make this a standard process then innovation is lost. 
+- I think is good that code reflects the mindset of a programmer, because if code is a reflection of your thinking process then the more different personalities the more rich code that is created. In my opinion innovation comes from the thinking process that gets better as more different mindsets solve a problem, individually and darwinism will do the rest. If we make of everything a standarized process then innovation is lost. 
+
+
 
 ## Later on VPL
 Later with VPL we will explore a frontier between external and internal mediums. modelling the external part as chaos, but understanding how the internal one react to it.
