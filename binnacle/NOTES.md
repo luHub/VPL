@@ -4,6 +4,30 @@ A section on notes and ideas
 
 ## Notes
 
+## Back to VPL
+
+After a small journey into cloud computing to be able to deal continue my line of thinking in soft^2 applications back to VPL.
+
+while toying and writting a non-done paper. There are some insights.
+
+- M as a diagonal or other matrix of 0s and 1s checks.
+- C as the control statement matrix checks
+- D as the data vector space matrix checks
+
+So right now we could write a small non-iterative program. "make x = x+1 5 times 
+
+```
+x=x+1
+x=x+1
+x=x+1
+x=x+1
+x=x+1
+```
+
+So write the matrix M,C and D. Later we could add matrix C using a while loop. 
+
+
+
 ## Software another approach 
 
 Looking at AI agentic design, is a practice is a small shift in applications design, from an artisan perspective, just another tool in the shelf, is not direct competition to a classical software mindset, is a shift in mindset that could ease design and operation of certain types of applications or systems making them more "soft" what I mean is that, is kind of silly to reject the power of logic, presicion, soundness and completeness obtained using programming language grammars and thinking logicaly ahead. But for sure, there are a bunch of applications that do not require that, those are applications could benefit from these approach, a more data driven one. For example: A workflow observer that suggest to a user the most optimal course of action to accomplish a non critical task, is not like the application is bounding the user to a series of predefined steps, but just influence desicion making, then a suggestion is up to the user to consider it right or wrong, so as long as the power of taking the choice is the right party, is more flexible to sacrifice presicion for guidance, as it is easier to maintain. At the end it boils down to use the right tool for the right purpose, to obtain a another level of "soft".      
