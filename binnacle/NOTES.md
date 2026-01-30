@@ -27,6 +27,8 @@ x=x+1
 So write the matrix M,C and D. Later we could add matrix C using a while loop. 
 
 
+c=CMD 
+
 
 ## Software another approach 
 
