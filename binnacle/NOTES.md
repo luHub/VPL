@@ -32,6 +32,9 @@ x(t+1) = D(Ct,xt)
 
 
 D = [ var x]
+
+5 steps represented in M.one after the another 
+
 C = [ 1 ]
 M = [ 1 ]
 
