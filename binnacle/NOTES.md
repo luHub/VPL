@@ -27,8 +27,13 @@ x=x+1
 So write the matrix M,C and D. Later we could add matrix C using a while loop. 
 
 
-c=CMD 
+c(t+1) = C(xt) M Ct and D
+x(t+1) = D(Ct,xt)
 
+
+D = [ var x]
+C = [ 1 ]
+M = [ 1 ]
 
 ## Software another approach 
 
