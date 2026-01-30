@@ -31,9 +31,12 @@ c(t+1) = C(xt) M Ct and D
 x(t+1) = D(Ct,xt)
 
 
-D = [ var x]
+D = [x]
 
-5 steps represented in M.one after the another 
+1) 5 steps represented in M.one after the another 
+2) Find Operators for x=x+1 
+
+
 
 C = [ 1 ]
 M = [ 1 ]
