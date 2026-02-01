@@ -34,7 +34,7 @@ D = [x]
 1) 5 steps represented in M.one after the another 
 2) Find Operators for x=x+a 
 
-x' = (operator) x + (operator's) a
+x' = (operator) x + (operator) a
 
 
 
