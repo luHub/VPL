@@ -20,8 +20,6 @@ So right now we could write a small non-iterative program. "make x = x+1 5 times
 x=x+a
 x=x+b
 x=x+c
-x=x+d
-x=x+e
 ```
 
 So write the matrix M,C and D. Later we could add matrix C using a while loop. 
@@ -34,8 +32,10 @@ D = [x]
 1) 5 steps represented in M.one after the another 
 2) Find Operators for x=x+a 
 
+```
 x' = (operator) x + (operator) a
-
+x' = (operator) x + (operator) b
+```
 
 
 C = [ 1 ]
