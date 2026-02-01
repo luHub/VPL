@@ -24,10 +24,11 @@ x=x+c
 
 So write the matrix M,C and D. Later we could add matrix C using a while loop. 
 
-
+```
 c(t+1) = C(xt) M Ct and D
 x(t+1) = D(Ct,xt)
 D = [x]
+```
 
 1) 5 steps represented in M.one after the another 
 2) Find Operators for x=x+a 
