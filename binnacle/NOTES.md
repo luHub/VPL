@@ -35,7 +35,8 @@ D = [x]
 
 ```
 x' = (operator) x + (operator) a
-x' = (operator) x + (operator) b
+x'' = (operator) x + (operator) b
+x''' = (operator) x + (operator) c
 ```
 
 
