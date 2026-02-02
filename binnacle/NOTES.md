@@ -38,6 +38,7 @@ x' = (operator) x + (operator) a
 x'' = (operator) x + (operator) b
 x''' = (operator) x + (operator) c
 
+-> Use linear operator Ax+b in matrix form for each statement:
 Aa = [ x a ]
 Ab = [ x b ]
 Ac = [ x c ]
