@@ -37,6 +37,10 @@ D = [x]
 x' = (operator) x + (operator) a
 x'' = (operator) x + (operator) b
 x''' = (operator) x + (operator) c
+
+Aa = [ x a ]
+Ab = [ x b ]
+Ac = [ x c ]
 ```
 
 
