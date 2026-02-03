@@ -17,22 +17,16 @@ while toying and writting a non-done paper. There are some insights.
 So right now we could write a small non-iterative program. "make x = x+1 5 times 
 
 ```
-x=x+a
-x=x+b
-x=x+c
+0:x=x+a
+1:x=x+b
+2:x=x+c
 ```
 
 So write the matrix M,C and D. Later we could add matrix C using a while loop. 
 
-```
-c(t+1) = C(xt) M Ct and D
-x(t+1) = D(Ct,xt)
-D = [x]
-```
-
 1) 5 steps represented in M.one after the another 
 2) Find Operators for x=x+a 
-
+3) Define Control Matrix
 ```
 x' = (operator) x + (operator) a
 x'' = (operator) x + (operator) b
@@ -43,6 +37,10 @@ x''' = (operator) x + (operator) c
 x'   = Ix+a
 x''  = Ix+b
 x''' = Ix+c
+
+C = [ c1 c2 c3  ]T with only one c active at a time
+
+M = [0 0 0, 0 1 0,0 1 0]
 
 
 ```
