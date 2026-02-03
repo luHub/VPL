@@ -38,15 +38,17 @@ x' = (operator) x + (operator) a
 x'' = (operator) x + (operator) b
 x''' = (operator) x + (operator) c
 
--> Use linear operator Ax+b in matrix form for each statement:
-Aa = [ x a ]
-Ab = [ x b ]
-Ac = [ x c ]
+-> Use affine transformation Ax+b in matrix form for each statement:
+
+x'   = Ix+a
+x''  = Ix+b
+x''' = Ix+c
+
+
 ```
 
 
-C = [ 1 ]
-M = [ 1 ]
+
 
 ## Software another approach 
 
