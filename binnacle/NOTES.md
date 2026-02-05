@@ -38,9 +38,17 @@ x'   = Ix+a
 x''  = Ix+b
 x''' = Ix+c
 
-C = [ c1 c2 c3  ]T with only one c active at a time
+V = [ v(0) v(1) v(2)  ]T with only one c active at a time
+
+v(0) = [ 1 0 0 ] ....
 
 M = [0 0 0, 0 1 0,0 1 0]
+
+D = [x' x'' x''']
+
+v(1) = M V(0) -> x'
+v(2) = M v(1) -> x''
+v(3) = M v(2) -> x'''
 
 
 ```
