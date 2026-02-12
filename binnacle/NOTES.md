@@ -4,6 +4,35 @@ A section on notes and ideas
 
 ## Notes
 
+
+## Back to Operational models
+
+The shape of different teams regarding software applications and infrastructure cannot be divided in departments as it ends up splitting both. Now infra does not know until late stages what is running and development don't know where is running. This is much worst in Cloud Environments where ignorance is paid when engineers develop their own way of what could had been achieved with a cloud vendor offering. 
+
+Both mindsets are different but whay I would like to suggest is an operational model where we have
+
+'''
+(Devs)---(Dev/Infra/Ops)--(Sys/Infra admins) 
+<---------- Team Dev ----><--- Team DevOps--->
+'''
+
+Having a human bridge which have access to both things. The advantage of this is that any domain problem will have a immediate design towards infrastructure. Any issue at infra will be solved faster, and there are no expensive boundaries. 
+
+Thing is a software engineer must be capable to grasp a basic or medium proficiency on systems.
+
+On the other hands, SRE, Administration, patching, updates, etc, are proper task of a system admin. You can't build applications and at the same time understand property design specifications. 
+
+This model although we have a person in the middle is more cost effective than waiting 1 week for and admin to do something on behalf of another person without any context. Design with tickets is a painful slow process, where people are completely detached and accountability does not exist. 
+
+Also in cloud environments code is splited around
+more than just one programming language and one repository. 
+
+The bridge person can tackle normal day by day tickets, but can have deep expertise and knowings about the environment and the people there. Is possible that this person sometimes spend more time on CICD or Cloud terraform files but if you want things in days instead of weeks is the right way to go. Also people will know him, system people will know what is going on. The most valuable thing here is trust, also this person could put a stop or go on early stages of design phases. Example: Solution A, sounds good but will cost a lot to maintain in the cloud... better use this... and that saves a lot of effort. 
+
+Another advantage is that when a sys. admin goes on vacations there is a pull of people to keep things running and know how to deal with critical failures. Getting a much better busfactor.
+
+Desicions regarding infra are not blind because people will know and understand what they are running. 
+
 ## Back to VPL
 
 After a small journey into cloud computing to be able to deal continue my line of thinking in soft^2 applications back to VPL.
