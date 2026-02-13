@@ -4,6 +4,25 @@ A section on notes and ideas
 
 ## Notes
 
+## Back to VPL
+
+the first paper should be humble an incomplete as LLMs start hallucinating after some iterations which is kind of expected. The PoC using LLMs give some structure, but full of incoherence. So now, even with not the best English a human version written by me will take place.
+
+### Abstract
+
+A vector space framework for programming is explored to act as a bridge between abstract programming semantics, a programming language, and physical implementations such as analog, digital, and quantum circuits. The idea in the long term is to know which parts or algorithms are better suit to execute as software or hardware. Using the same framework, mathematical model, called that we call VPL for short of Vector Phasor Language. We envision an model that runs on a vector evolution machine VEM. and another goal is to explore new paradigms outside of von Neumann architecture for hardware design. From a knowledge organization perspective this is a mixture of dynamics systems, abstract semantics and quantum realizations. 
+
+
+### Introduction 
+
+The exercise to transform abstract statements to VPL will start in a program representation in Backus naur form (BNF) and move to a set of rules statements, control and data into 3 different vector spaces. The model of computation has M matrix that acts as a "connection board" between statements, a matrix D which holds a data vector space and a matrix C which holds the control structure. In this model. This model should work with the rules of linear algebra, and should be compatible with circuits mappings. So we could ask what is a "While"
+on a circuit is an oscillation, a phasor, a jump in Matrix M which acts as a wiring mechanism. 
+
+#### VPL computational model for assignments
+
+...
+
+
 
 ## Back to Operational models
 
