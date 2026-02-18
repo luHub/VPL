@@ -20,6 +20,15 @@ on a circuit is an oscillation, a phasor, a jump in Matrix M which acts as a wir
 
 #### VPL computational model for assignments
 
+we won't know how this model will look like after mapping all the semantics necessary so we will start by this definition:
+
+```
+{M,C,D} 
+```
+
+Using 3 vector spaces, one for the program structure called M which acts as a connection map, one for control called C, and one for data values called D. 
+
+
 ...
 
 
