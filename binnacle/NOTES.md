@@ -23,11 +23,13 @@ on a circuit is an oscillation, a phasor, a jump in Matrix M which acts as a wir
 we won't know how this model will look like after mapping all the semantics necessary so we will start by this definition:
 
 ```
-{M,C,D} 
+{M,C,D,A} 
 ```
 
-Using 3 vector spaces, one for the program structure called M which acts as a connection map, one for control called C, and one for data values called D. 
+Using 4 vector spaces, one for the program structure called M which acts as a connection map, one for control called C, one for data values called , and one called A for the statements.
 
+
+Now we need recall the definition of a statement. 
 
 ...
 
