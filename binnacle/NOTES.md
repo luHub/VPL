@@ -26,7 +26,7 @@ we won't know how this model will look like after mapping all the semantics nece
 {M,C,D,A} 
 ```
 
-Using 4 vector spaces, one for the program structure called M which acts as a connection map, one for control called C, one for data values called , and one called A for the statements.
+Using 4 vector spaces, one for the program structure called M which acts as a connection map, one for control called C, one for data values called , and one called A for the statements after converting them to a vector space representation.
 
 
 Now we need recall the definition of a statement. 
