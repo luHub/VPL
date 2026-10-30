@@ -1,5 +1,7 @@
 # VPL (Vector Phasor Language)
 
+WARNING: THIS CONTAINS AI SLOP, DO NOT READ!
+
 VPL is a mathematical framework for seeing programs as geometric motion. The idea comes from a combination of electrical engineering, computer science, and mathematics. For years, I kept coming back to a simple thought: why not vectors? After all, we use them to describe almost everything. Later, when I studied compiler construction, everything was different; it was like watching another movie, but it was a good catch on semantics and linguistics. Still, the idea was in motion. So, how to connect this together? Translating semantics into something else, with some rules, so I start pairing stuff, so if with a "While" you can do almost anything. Let a while be a phasor because both go in circles. Typing well, let's have a Vector space for types, and so on.
 
 With the advent of LLMs, such as ChatGPT, I prototyped something. One advantage of understanding electrical engineering, computer science, and math is that I know exactly what I want, or at least know when something is off.  The speed at which a PoC is quite low or impossible without LLMs; they are here to stay, so we must use them.
