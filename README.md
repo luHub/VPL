@@ -69,7 +69,7 @@ $$
 
 $$
 M = \bigoplus_{k=1}^{K} M_k
-= \operatorname{diag}(M_1, M_2, \ldots, M_K)
+= \mathrm{diag}(M_1, M_2, \ldots, M_K)
 $$
 
 $$
