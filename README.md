@@ -2,8 +2,9 @@
 
 **A mathematical framework and compiler Intermediate Representation (IR) for viewing programs as geometric motion—and compiling software directly into dedicated digital and analog circuits.**
 
-[![License: GPL v3](https://shields.io)](LICENSE.md)
-[![Status: Research & PoC](https://shields.io)](#roadmap--demos)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE.md)
+[![Status: Research & PoC](https://img.shields.io/badge/Status-Research%20%26%20PoC-orange.svg)](#roadmap--demos)
+
 
 ---
 
