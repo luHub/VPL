@@ -1,62 +1,145 @@
-# VPL (Vector Phasor Language)
+# VPL — Vector Phasor Language
 
-WARNING: THIS CONTAINS AI SLOP, DO NOT READ!
+**A mathematical framework and compiler Intermediate Representation (IR) for viewing programs as geometric motion—and compiling software directly into dedicated digital and analog circuits.**
 
-VPL is a mathematical framework for seeing programs as geometric motion. The idea comes from a combination of electrical engineering, computer science, and mathematics. For years, I kept coming back to a simple thought: why not vectors? After all, we use them to describe almost everything. Later, when I studied compiler construction, everything was different; it was like watching another movie, but it was a good catch on semantics and linguistics. Still, the idea was in motion. So, how to connect this together? Translating semantics into something else, with some rules, so I start pairing stuff, so if with a "While" you can do almost anything. Let a while be a phasor because both go in circles. Typing well, let's have a Vector space for types, and so on.
+[![License: GPL v3](https://shields.io)](LICENSE.md)
+[![Status: Research & PoC](https://shields.io)](#roadmap--demos)
 
-With the advent of LLMs, such as ChatGPT, I prototyped something. One advantage of understanding electrical engineering, computer science, and math is that I know exactly what I want, or at least know when something is off.  The speed at which a PoC is quite low or impossible without LLMs; they are here to stay, so we must use them.
+---
 
-There is work to do. For example, math proving by humans, covering more cases in the model, and testing. I think it has a nice way to shift from "code" to "hardware". We need simpler machines once we know what we want; therefore, converting software to hardware sounds promising, especially in terms of performance  and  energy consumption. Finally, another reason is that we need to start reasoning in terms of quantum mechanics, which is already defined in terms of vectors, so it would be tempting to map as much as possible to quantum circuits.
+## Core Intuition
 
-I will evolve this mathematical framework as much as possible, and it is open for peer review.
+Why represent computation solely as sequential text instructions on a general-purpose CPU when physical reality operates on vectors, fields, and oscillations?
 
-# VPL as IR
+**Vector Phasor Language (VPL)** models a program as a discrete-time **Vector Evolution Machine (VEM)**:
+* **Program State** is a single unified vector combining control flow and data variables in orthogonal subspaces.
+* **Loops (`while` / `for`)** are **phasors** (\(e^{j\phi}\)) rotating through phase states rather than imperative jumps.
+* **Conditionals & Neural Activations (e.g., ReLU)** are **geometric hyperplane guards** clamping or redirecting trajectories in state space.
+* **Parallelism** emerges naturally whenever the transition operator decomposes into block-diagonal submatrices—requiring no thread schedulers, locks, or operating system overhead.
 
-VPL also is an intermediate representation language (IR) between software semantics and physical implementations, you can picture it as a translation tool. In a broad picture, once you cross to another domain you adjust and optimize in that domain as the inputs and outputs remain valid. The final test of this is a physical implementation of a complex software library.
+Once lowered into **VPL IR**, high-level algorithms (such as Fast Fourier Transforms or neural network layers) can be synthesized directly into **Digital RTL (Verilog/FPGA)**, **Analog/Mixed-Signal Circuits (SPICE)**, or future **Quantum Circuits**.
 
-# VPL Toolchain
+---
 
-From the "master paper", there are 2 possible inputs one from mathematics formulations to VPL, mathematical translation to VPL or the other one is to 
-bridge from highlevel programming to VPL.
+## The 5 Governing Equations of VPL
 
-Once in VPL, abstract semantics or mathematical formulations become part of the hardware domain. Here is possible to optimize in terms of engineering depending, that could be
-electrical, quantic, any other physical representation.
+Every VPL IR program is completely defined by the 5-tuple \(\mathcal{P} = \langle \mathcal{H},\; M,\; c,\; \mathcal{G},\; P_{\text{halt}} \rangle\):
 
-### Limitations
+### 1. Unified State Space Law (Kinematics)
+\[\mathcal{H} = \mathcal{H}_C \oplus \mathcal{H}_D, \qquad X(t) = \begin{bmatrix} C(t) \\ D(t) \end{bmatrix} \in \mathbb{C}^{n_C} \oplus \mathbb{R}^{n_D}\]
+> Control flow \(C(t)\) and program variables/tensors \(D(t)\) occupy orthogonal subspaces of a single state vector \(X(t)\). There is no external program counter or separate memory bus.
 
-- The tool chain will focus on Electrical Digital and Analog implementations since I need to finish studying Quantum Computing to have a basic understanding what I am doing. 
-- Tool chain PoC will focus on small algorithms written in Python, C++, and C. As input.
-- According to the master paper general purpose systems are out of scope.
+### 2. Evolution Law (Dynamics)
+\[X(t+1) = M X(t) + c, \qquad M = \begin{bmatrix} M_{CC} & M_{CD} \\ M_{DC} & M_{DD} \end{bmatrix}\]
+> Execution advances in discrete steps via a coupled affine operator: \(M_{CC}\) drives control transitions, \(M_{CD}\) handles data-dependent branching, \(M_{DC}\) gates data writes, \(M_{DD}\) performs intrinsic arithmetic/matrix multiplications, and \(c\) injects constants/biases.
 
-## The Abstract toolchain
+### 3. Phasor Control & Constraint Law (Iteration & Non-Linearity)
+\[C(t) = \sum_{i=1}^{n_C} a_i e^{j\phi_i(t)} e_{c_i}, \qquad \Phi_{\text{loop}} = \Phi_{\text{cond}} \cdot \Phi_{\text{body}} \cdot \Phi_{\text{back}} \quad \text{s.t.} \quad \mathcal{G}: \; C_p X(t) + c_p \ge 0\]
+> Iterative loops are cyclic phase rotations (\(e^{j\phi_i}\)) enabling spatial unrolling vs. temporal folding (time-multiplexing). Non-linearities and branches act as hyperplane guards \(\mathcal{G} = (C_p, c_p)\).
 
-This one is for mathematics and developed as papers with mathematical formulations
+### 4. Structural Parallelism Law (Superposition without Threads)
+\[M = \bigoplus_{k=1}^{K} M_k = \operatorname{diag}(M_1, M_2, \dots, M_K) \quad \Longleftrightarrow \quad X(t+1) = \sum_{i \in \mathcal{A}(t)} \alpha_i M_i X(t)\]
+> Independent operations decompose into block-diagonal submatrices, synthesizing directly into concurrent physical hardware datapaths.
 
-## The Bridging toolchain
+### 5. Halting & Projection Law (Termination & Readout)
+\[P_{\text{halt}} X(t) \neq 0 \quad \left(M_{CC} e_{\text{halt}} = e_{\text{halt}}\right), \qquad Y_{\text{out}} = P_D X(t)\]
+> Computation terminates when \(C(t)\) enters an absorbing eigenstate \(e_{\text{halt}}\) (\(\lambda = 1\)), projecting the final result \(Y_{\text{out}}\) onto physical output pins.
 
-This one is actual code to produce an intermediate representation and from there create hardware.
+---
 
-### The Full toolchain
+## Compiler Architecture & Hardware Mapping
 
-Has everything and we will evolve it from the simplest but not so simple programming language semantics. 
+VPL bridges high-level code (Python / C / C++) and formal mathematics into physical hardware through a 6-stage pipeline:
 
-# Demo list 
+```text
+[ Python / C / Neural Graph ]
+             │
+             ▼
+  1. Extractor & 2. Translator   ──► Lowers AST / computation graph to VPL primitives
+             │
+             ▼
+  3. Expander & 4. Phasor Pass   ──► Builds block-sparse M, folds phasor cycles, permutes block-diagonals
+             │
+             ▼
+       5. VEM Simulator          ──► Verifies X(t+1) = M X(t) + c algebraically
+             │
+             ▼
+     6. Physical Mapping         ──► Emits Digital Verilog (.v) or Analog SPICE (.cir)
+```
 
-- While loop
-- Fast Fourier Transform: From code to Hardware Implementation 
+### Physical Synthesis Mapping
 
-# Peer Reviews
+| VPL IR Primitive | Digital RTL (`Verilog` / FPGA) | Analog / Mixed-Signal (`NGSPICE`) |
+| :--- | :--- | :--- |
+| **State Vector \(X(t)\)** | Clocked D-Flip-Flop registers | Sample-and-hold capacitors / node voltages |
+| **Operator \(M_{DD} X + c\)** | Combinational DSP multipliers & adder trees | Conductance crossbar (\(G = 1/R\)) + bias sources |
+| **Phasor Control \(C(t)\)** | One-hot / phase-encoded Finite State Machine | Multi-phase non-overlapping clock generator |
+| **Hyperplane Guard \(\mathcal{G}\)** | Signed comparator + 2:1 multiplexer (ReLU) | Op-amp comparator / precision diode clamp |
+| **Block Diagonal \(\bigoplus M_k\)** | Parallel independent hardware modules | Decoupled analog sub-circuits |
+| **Projection \(P_{\text{halt}}, P_D\)** | `done` status wire + output data bus | Threshold detector + output buffer amplifier |
 
-Create a MR with your comments and after review I will create a new version of it
+---
 
-# Contributors
+## Quickstart & Demos
 
-Lucio Guerchi 
+### Prerequisites
+* **Python 3.10+** with `numpy` (for IR lowering and algebraic VEM simulation)
+* *(Optional)* **Icarus Verilog** (`iverilog`) or **Yosys** for digital RTL simulation & FPGA synthesis
+* *(Optional)* **NGSPICE** (`ngspice`) for analog circuit waveform verification
 
+### 1. Run the 2-Layer XOR Neural Circuit Demo
+Lowers a 2-layer ReLU MLP into the 5-tuple `VPLProgramIR`, verifies the truth table in the algebraic VEM simulator, and emits both Verilog and SPICE netlists:
 
+```bash
+python examples/xor_vem.py
+```
 
+* **Simulate Digital RTL (Icarus Verilog):**
+  ```bash
+  iverilog -o build/xor_sim generated/vpl_xor_vem.v && vvp build/xor_sim
+  ```
+* **Simulate Analog Circuit (NGSPICE):**
+  ```bash
+  ngspice -b generated/vpl_xor_analog.cir
+  ```
 
+### 2. Run the 8-Point Radix-2 FFT Demo
+Demonstrates complex phasor twiddle rotations (\(W_8^k = e^{-j 2\pi k / 8}\)) and block-diagonal butterfly decomposition lowered into VPL IR:
 
+```bash
+python examples/fft8_vem.py
+```
 
+---
 
+## Repository Structure
 
+```text
+VPL/
+├── compiler/      # VPL IR dataclasses, AST/graph lowering, phasor optimizer, and Verilog/SPICE emitters
+├── examples/      # Runnable PoC scripts (While loop, 8-point FFT, 2-layer XOR neural network)
+├── paper/         # Mathematical formalism and proofs for the Vector Evolution Machine (VEM)
+├── binnacle/      # Research logs, design notes, and architectural experiments
+└── LICENSE.md     # GNU General Public License v3.0
+```
+
+---
+
+## Roadmap & Demos
+
+* [x] **Mathematical Foundation:** Vector Evolution Machine (VEM) state space, phasor control, and block-diagonal parallelism (`paper/`).
+* [x] **Demo 1 — While Loop:** Basic iterative state evolution in VPL IR.
+* [x] **Demo 2 — 2-Layer Neural Network (XOR):** Lowering affine layers + ReLU hyperplane guards into Verilog RTL and NGSPICE netlists.
+* [ ] **Demo 3 — Fast Fourier Transform (FFT):** 8-point Radix-2 Cooley-Tukey FFT lowered to FPGA fabric via `Yosys`/`nextpnr`.
+* [ ] **Demo 4 — `micrograd` / ONNX Frontend:** Automated ingestion of small trained neural networks with phasor time-multiplexing.
+* [ ] **Future — Quantum Backend:** Mapping unitary phasor operators to OpenQASM circuits.
+
+---
+
+## Peer Review & Contributions
+
+This project is actively evolving and open to mathematical and hardware engineering peer review. If you spot edge cases in the formalism, have suggestions for the IR schema, or want to test generated netlists on FPGA/SPICE toolchains, please open an **Issue** or submit a **Merge Request / Pull Request**.
+
+* **Author:** Lucio Guerchi
+* **License:** GPL-3.0 (see [LICENSE.md](LICENSE.md))
+* *Transparency Note: Parts of the documentation, prototype code, and hardware emission scripts in this repository were drafted with AI assistance under the author's architectural direction.*
