@@ -26,23 +26,33 @@ Once lowered into **VPL IR**, high-level algorithms (such as Fast Fourier Transf
 Every VPL IR program is completely defined by the 5-tuple \(\mathcal{P} = \langle \mathcal{H},\; M,\; c,\; \mathcal{G},\; P_{\text{halt}} \rangle\):
 
 ### 1. Unified State Space Law (Kinematics)
+
 \[\mathcal{H} = \mathcal{H}_C \oplus \mathcal{H}_D, \qquad X(t) = \begin{bmatrix} C(t) \\ D(t) \end{bmatrix} \in \mathbb{C}^{n_C} \oplus \mathbb{R}^{n_D}\]
+
 > Control flow \(C(t)\) and program variables/tensors \(D(t)\) occupy orthogonal subspaces of a single state vector \(X(t)\). There is no external program counter or separate memory bus.
 
 ### 2. Evolution Law (Dynamics)
+
 \[X(t+1) = M X(t) + c, \qquad M = \begin{bmatrix} M_{CC} & M_{CD} \\ M_{DC} & M_{DD} \end{bmatrix}\]
+
 > Execution advances in discrete steps via a coupled affine operator: \(M_{CC}\) drives control transitions, \(M_{CD}\) handles data-dependent branching, \(M_{DC}\) gates data writes, \(M_{DD}\) performs intrinsic arithmetic/matrix multiplications, and \(c\) injects constants/biases.
 
 ### 3. Phasor Control & Constraint Law (Iteration & Non-Linearity)
+
 \[C(t) = \sum_{i=1}^{n_C} a_i e^{j\phi_i(t)} e_{c_i}, \qquad \Phi_{\text{loop}} = \Phi_{\text{cond}} \cdot \Phi_{\text{body}} \cdot \Phi_{\text{back}} \quad \text{s.t.} \quad \mathcal{G}: \; C_p X(t) + c_p \ge 0\]
+
 > Iterative loops are cyclic phase rotations (\(e^{j\phi_i}\)) enabling spatial unrolling vs. temporal folding (time-multiplexing). Non-linearities and branches act as hyperplane guards \(\mathcal{G} = (C_p, c_p)\).
 
 ### 4. Structural Parallelism Law (Superposition without Threads)
+
 \[M = \bigoplus_{k=1}^{K} M_k = \operatorname{diag}(M_1, M_2, \dots, M_K) \quad \Longleftrightarrow \quad X(t+1) = \sum_{i \in \mathcal{A}(t)} \alpha_i M_i X(t)\]
+
 > Independent operations decompose into block-diagonal submatrices, synthesizing directly into concurrent physical hardware datapaths.
 
 ### 5. Halting & Projection Law (Termination & Readout)
+
 \[P_{\text{halt}} X(t) \neq 0 \quad \left(M_{CC} e_{\text{halt}} = e_{\text{halt}}\right), \qquad Y_{\text{out}} = P_D X(t)\]
+
 > Computation terminates when \(C(t)\) enters an absorbing eigenstate \(e_{\text{halt}}\) (\(\lambda = 1\)), projecting the final result \(Y_{\text{out}}\) onto physical output pins.
 
 ---
