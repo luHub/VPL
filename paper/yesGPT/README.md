@@ -10,7 +10,7 @@ I honestly dislike this term because it implies that GPT is some sort of human o
 
 ### Why YES GPT
 
-I needed to study several view ports at a fast pace for VPL, and have an end-to-end vision or structure. So, it helped to prototype the idea. Also do the tedius work to organize, redact, load Laxed libraries, etc. But real work is in the NoGPT section.
+I needed to study several view ports at a fast pace for VPL, and have an end-to-end vision or structure. So, it helped to prototype the idea. Also do the tedius work to organize, redact, load Latex libraries, etc. But real work is in the NoGPT section. Also, I am an ignorant but with some intuition and a plan. 
 
 As I stated before GPT is a tool, not a research driver. 
 
